@@ -62,7 +62,7 @@
 </head>
 <body class="">
 
-    <nav class="hidden md:flex flex-row justify-center py-5 relative">
+    <nav class="hidden md:flex flex-row justify-center py-5 relative hover:bg-blue-50 transition delay-75 duration-200 ease-in-out">
         <a href="#" class="font-bold text-2xl ml-5 flex-shrink text-red-300 absolute left-5">
             Binus40TahunBerkarya
         </a>
@@ -99,10 +99,10 @@
         </section>
 
 
-        <section class="flex flex-col-reverse justify-between px-8 md:px-28 bg-blue-200 py-16 mb-12 md:flex-row">
+        <section class="flex flex-col-reverse justify-between px-8 md:px-28 bg-blue-50 py-16 mb-12 md:flex-row">
             <div class="md:w-3/6 flex flex-col justify-center text-right py-5">
                 <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Apa itu Covid-19?</h1>
-                <p class="md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cupiditate possimus reprehenderit hic corporis deleniti, nulla commodi ratione delectus nam reiciendis voluptate magni blanditiis. Reprehenderit itaque magnam nulla sapiente ducimus!</p>
+                <p class="md:text-lg">COVID-19 adalah penyakit yang disebabkan oleh virus severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). COVID-19 dapat menyebabkan gangguan sistem pernapasan, mulai dari gejala yang ringan seperti flu, hingga infeksi paru-paru, seperti pneumonia.</p>
             </div>
             <div class="md:w-2/5">
                 <div class="">
@@ -111,13 +111,13 @@
             </div>
         </section>
 
-        <section class="flex justify-between flex-col md:flex-row px-8 md:px-28 bg-purple-200 py-16 mb-12">
+        <section class="flex justify-between flex-col md:flex-row px-8 md:px-28 bg-blue-50 py-16 mb-12">
             <div class="md:w-2/5">
-                <img src="https://image.freepik.com/free-vector/cartoon-coronavirus-vaccine-illustration_23-2148849133.jpg" alt="">
+                <img src="https://image.freepik.com/free-vector/portrait-woman-get-sick-she-is-coughing-suffering-from-chest-pain-coronavirus-2019-ncov-flu-health-medical-illustration_253263-32.jpg   " alt="">
             </div>
             <div class="md:w-3/6 flex flex-col justify-center text-left py-5">
-                <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Apa itu Vaksinasi?</h1>
-                <p class="md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cupiditate possimus reprehenderit hic corporis deleniti, nulla commodi ratione delectus nam reiciendis voluptate magni blanditiis. Reprehenderit itaque magnam nulla sapiente ducimus!</p>
+                <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Gejala Covid-19</h1>
+                <p class="md:text-lg">Gejala awal infeksi COVID-19 bisa menyerupai gejala flu, yaitu <span class="font-semibold">demam, pilek, batuk kering, sakit tenggorokan, dan sakit kepala</span>. Setelah itu, gejala dapat hilang dan sembuh atau malah memberat. Penderita dengan gejala yang berat bisa mengalami demam tinggi, batuk berdahak atau berdarah, sesak napas, dan nyeri dada. Gejala-gejala tersebut di atas muncul ketika tubuh bereaksi melawan virus COVID-19.</p>
             </div>
         </section>
 
