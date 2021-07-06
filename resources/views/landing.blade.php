@@ -45,12 +45,22 @@
                 min-height: 5rem;
                 /* width: 5rem; */
             }
+
+            .no-scrollbar::-webkit-scrollbar {
+                width: 0;
+                display: none;
+            }
+
+            .no-scrollbar::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                /* -webkit-box-shadow: inset 0 0 6px     rgb(129, 145, 167); */
+            }
         }
 
     </style>
 
 </head>
-<body>
+<body class="">
 <!-- 
     <nav class="flex flex-row justify-center py-5 relative">
         <a href="#" class="font-bold text-2xl ml-5 flex-shrink text-red-300 absolute left-5">
@@ -89,7 +99,7 @@
         </section>
 
 
-        <section class="flex flex-col-reverse justify-between px-8 md:px-28 bg-blue-50 py-16 mb-12 md:flex-row">
+        <section class="flex flex-col-reverse justify-between px-8 md:px-28 bg-blue-200 py-16 mb-12 md:flex-row">
             <div class="md:w-3/6 flex flex-col justify-center text-right py-5">
                 <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Apa itu Covid-19?</h1>
                 <p class="md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cupiditate possimus reprehenderit hic corporis deleniti, nulla commodi ratione delectus nam reiciendis voluptate magni blanditiis. Reprehenderit itaque magnam nulla sapiente ducimus!</p>
@@ -101,7 +111,7 @@
             </div>
         </section>
 
-        <section class="flex justify-between flex-col md:flex-row px-8 md:px-28 bg-blue-50 py-16 mb-12">
+        <section class="flex justify-between flex-col md:flex-row px-8 md:px-28 bg-purple-200 py-16 mb-12">
             <div class="md:w-2/5">
                 <img src="https://image.freepik.com/free-vector/cartoon-coronavirus-vaccine-illustration_23-2148849133.jpg" alt="">
             </div>
@@ -199,10 +209,10 @@
 
     </div>
 
-    <!-- <div class="flex items-end justify-center bg-gray-800 text-white px-24">
-        <div class="flex justify-between min-w-full h-52 py-5">
+    <div class="flex items-end justify-center bg-gray-800 text-white p-5 md:px-24">
+        <div class="flex justify-between min-w-full h-full md:h-52 flex-col md:flex-row gap-y-5 divide-y-2 divide-blue-100 divide-solid md:divide-none">
             <div class="flex flex-col items-start">
-                <div class="font-bold text-3xl">
+                <div class="font-bold md:text-3xl">
                     Binus40TahunBerkarya
                 </div>
             </div>
@@ -213,16 +223,16 @@
                 <a href="#">Forum Diskusi</a>
             </div>
             <div class="flex flex-col items-start">
-                <div class="text-xl font-semibold">Contact us:</div>
+                <div class="md:text-xl font-semibold">Contact us:</div>
                 <a href="#">binus40tahunberkarya@binus.edu</a>
             </div>
             <div class="flex flex-col items-start">
-                <div class="text-xl font-semibold">Author:</div>
+                <div class="md:text-xl font-semibold">Author:</div>
                 <a href="#">Reynaldi Chernando</a>
                 <a href="#">Stephen Leonardo</a>
             </div>
         </div>
-    </div> -->
+    </div>
 
 </body>
 </html>
