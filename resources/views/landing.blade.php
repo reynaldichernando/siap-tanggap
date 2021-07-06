@@ -61,8 +61,8 @@
 
 </head>
 <body class="">
-<!-- 
-    <nav class="flex flex-row justify-center py-5 relative">
+
+    <nav class="hidden md:flex flex-row justify-center py-5 relative">
         <a href="#" class="font-bold text-2xl ml-5 flex-shrink text-red-300 absolute left-5">
             Binus40TahunBerkarya
         </a>
@@ -75,7 +75,7 @@
         <div class="mr-5 absolute right-5">
             <a href="#">Daftar Akun</a>
         </div>
-    </nav> -->
+    </nav>
 
 
     <div class="mt-14 mb-28">
