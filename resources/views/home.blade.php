@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         .news-card{
             min-width: 15rem;
@@ -39,6 +40,10 @@
             scrollbar-width: none;  /* Firefox */
         }
 
+        #menu-toggle:checked + #menu {
+            display: block;
+        }
+
         @media only screen and (max-width: 768px) {
             .news-card{
                 min-width: 7rem;
@@ -55,17 +60,35 @@
                 border-radius: 10px;
                 /* -webkit-box-shadow: inset 0 0 6px     rgb(129, 145, 167); */
             }
+
+            
         }
+
+
 
     </style>
 
 </head>
 <body class="">
 
-    <nav class="hidden md:flex flex-row justify-center py-5 relative hover:bg-blue-50 transition delay-75 duration-200 ease-in-out">
-        <a href="#" class="font-bold text-2xl ml-5 flex-shrink text-red-300 absolute left-5">
-            Binus40TahunBerkarya
+    <!-- <nav class=" h-16 w-full justify-center py-5 relative hover:bg-blue-50 transition delay-75 duration-200 ease-in-out">
+        
+        <input type="checkbox" class="hidden" id="checkbox_menubar">
+        <label for="checkbox_menubar">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:hidden text-gray-800 float-right block cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>        
+        </label>
+        
+        <a href="#" class="font-bold text-2xl ml-5 text-red-300 absolute left-5">
+            Siap Tanggap
         </a>
+        <ul class="float-right fixed leading-loose font-semibold text-3xl md:text-base w-full h-screen bg-gray-600 md:inline md:bg-transparent top-16 left-0 text-center md:text-right md:w-full md:h-full md:static "transition duration-500 ease-in-out">
+            <li class="block md:inline-block  mx-2"><a href="#" class="rounded text-white md:text-black hover:text-blue-50 md:hover:bg-blue-400 p-1 md:hover:text-white">Beranda</a></li>
+            <li class="block md:inline-block  mx-2"><a href="#" class="rounded text-white md:text-black hover:text-blue-50 md:hover:bg-blue-400 p-1 md:hover:text-white">Lokasi Vaksinasi</a></li>
+            <li class="block md:inline-block  mx-2"><a href="#" class="rounded text-white md:text-black hover:text-blue-50 md:hover:bg-blue-400 p-1 md:hover:text-white">Forum Diskusi</a></li>
+            <li class="block md:inline-block  mx-2"><a href="#" class="rounded text-white md:text-black hover:text-blue-50 md:hover:bg-blue-400 p-1 md:hover:text-white">Daftar Akun</a></li>
+        </ul>
         <div class="flex flex-row justify-center text-lg font-semibold">
             <a href="#" class="mr-5">Beranda</a>
             <a href="#" class="mx-5">Lokasi Vaksinasi</a>
@@ -75,7 +98,34 @@
         <div class="mr-5 absolute right-5">
             <a href="#">Daftar Akun</a>
         </div>
-    </nav>
+    </nav> -->
+
+    <header class="md:px-16 px-6 bg-white flex flex-wrap items-center md:py-0 py-2 transition duration-500 ease-in-out">
+        <div class="flex-1 flex justify-between items-center">
+            <a href="#" class="font-bold text-2xl md:text-4xl text-purple-500">
+                Siap Tanggap
+            </a>
+        </div>
+
+        <label for="menu-toggle" class="pointer-cursor md:hidden block"><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+            <nav>
+                <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+                    <li><a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#">Features</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#">Pricing</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#">Documentation</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 md:mb-0 mb-2" href="#">Support</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="md:ml-4 md:p-4 py-3 border-b-2 border-transparent hover:border-yellow-400 flex items-center font-medium justify-start md:mb-0 mb-4 pointer-cursor">
+                Daftar Akun
+            </a>
+
+        </div>
+
+    </header>
 
 
     <div class="mt-14 mb-28">
