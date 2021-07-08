@@ -71,7 +71,7 @@
 
 </head>
 <body>
-<header class="md:px-16 px-6 bg-white flex flex-wrap items-center md:py-0 py-2 transition duration-500 ease-in-out">
+    <header class="md:px-16 px-6 bg-white flex flex-wrap items-center md:py-0 py-2 hover:bg-blue-100 transition duration-500 ease-in-out">
         <div class="flex-1 flex justify-between items-center">
             <a href="#" class="font-bold text-2xl md:text-4xl text-purple-500">
                 Siap Tanggap
