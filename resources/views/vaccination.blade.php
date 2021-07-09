@@ -48,16 +48,16 @@
                 <p>Dengan begitu, sebagai respon adanya ancaman dari musuh maka tubuh akan memproduksi antibodi untuk melawan antigen tersebut. Namun, kekebalan yang didapat melalui vaksinasi, tidaklah bertahan seumur hidup terhadap infeksi penyakit berbahaya. </p>
             </div>
         </div>
-        <div class="md:w-2/5">
+        <div class="md:w-1/3 w-3/5">
             <div class="">
-                <img src="http://mnctrijaya.com/uploads/news/vak(1).jpeg" alt="" class="">
+                <img src="{{URL::asset('/images/Drawkit-Vector-Illustration-Medical-05.svg')}}" alt="" class=" w-full h-full">
             </div>
         </div>
     </section>
 
-    <section class="flex justify-around flex-col md:flex-row px-8 md:px-28 bg-blue-50 py-16 mb-12">
-        <div class="md:w-2/5">
-            <img src="{{URL::asset('/images/doctor-colour.svg')}}" alt="">
+    <section class="flex justify-around items-center flex-col md:flex-row px-8 md:px-28 bg-blue-50 py-16 mb-12">
+        <div class="md:w-2/5 w-3/5">
+            <img src="{{URL::asset('/images/doctor-colour.svg')}}" alt="" class=" w-full h-full">
         </div>
         <div class="md:w-3/6 flex flex-col justify-center text-justify py-5">
             <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Kenapa Harus Vaksin?</h1>
