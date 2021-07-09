@@ -23,7 +23,7 @@
     </section>
 
 
-    <section class="flex flex-col-reverse justify-between px-8 md:px-28 bg-blue-50 py-16 mb-12 md:flex-row">
+    <section class="flex flex-col-reverse justify-between bg-blue-50 py-16 mb-12 md:flex-row">
         <div class="md:w-3/6 flex flex-col justify-center text-right py-5">
             <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Apa itu Covid-19?</h1>
             <p class="md:text-lg">COVID-19 adalah penyakit yang disebabkan oleh virus severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). COVID-19 dapat menyebabkan gangguan sistem pernapasan, mulai dari gejala yang ringan seperti flu, hingga infeksi paru-paru, seperti pneumonia.</p>
