@@ -84,10 +84,10 @@
         <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
             <nav>
                 <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
-                    <li><a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#">Features</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#">Pricing</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#">Documentation</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 md:mb-0 mb-2" href="#">Support</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="{{ url('/home') }}">Beranda</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="{{ url('/vaccination') }}">Lokasi Vaksinasi</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="#">Forum Diskusi</a></li>
+                    <!-- <li><a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 md:mb-0 mb-2" href="#">Support</a></li> -->
                 </ul>
             </nav>
             <a href="#" class="md:ml-4 md:p-4 py-3 border-b-2 border-transparent hover:border-yellow-400 flex items-center font-medium justify-start md:mb-0 mb-4 pointer-cursor">
@@ -99,7 +99,7 @@
     </header>
 
 
-    <div class="main-content">
+    <div class="mt-14 mb-28 main-content">
         @yield('main-content')
     </div>
 
