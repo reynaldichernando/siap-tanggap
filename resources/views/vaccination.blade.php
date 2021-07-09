@@ -13,11 +13,29 @@
             </svg>
         </div>
         <div class="flex flex-col md:flex-row justify-between items-center w-5/6">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
+            <select name="vacc-province" id="vacc-province" class="flex-1 mx-2 border-2 border-blue-300 rounded focus:outline-none text-lg p-2">
+                <option value="">Pilih Provinsi</option>
+                <option value="1">DKI Jakarta</option>
+                <option value="2">Kepulauan Riau</option>
+            </select>
+
+            <select name="vacc-city" id="vacc-city" class="flex-1 mx-2 border-2 border-blue-300 rounded focus:outline-none text-lg p-2">
+                <option value="">Pilih Kota</option>
+                <option value="1">Jakarta Barat</option>
+                <option value="2">Batam</option>
+            </select>
+
+            <select name="vacc-hospital" id="vacc-hospital" class="flex-1 mx-2 border-2 border-blue-300 rounded focus:outline-none text-lg p-2">
+                <option value="">Pilih Rumah Sakit</option>
+                <option value="1">Awal Bros</option>
+                <option value="2">Klinik Tong Fang</option>
+            </select>
+
         </div>
     </section>
+
+
+    
+
 
 @endsection

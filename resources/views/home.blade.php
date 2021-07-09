@@ -23,8 +23,8 @@
     </section>
 
 
-    <section class="flex flex-col-reverse justify-between bg-blue-50 py-16 mb-12 md:flex-row">
-        <div class="md:w-3/6 flex flex-col justify-center text-right py-5">
+    <section class="flex flex-col-reverse justify-around bg-blue-50 py-16 mb-12 md:flex-row">
+        <div class="md:w-3/6 flex flex-col justify-center text-justify py-5 px-8">
             <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Apa itu Covid-19?</h1>
             <p class="md:text-lg">COVID-19 adalah penyakit yang disebabkan oleh virus severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). COVID-19 dapat menyebabkan gangguan sistem pernapasan, mulai dari gejala yang ringan seperti flu, hingga infeksi paru-paru, seperti pneumonia.</p>
         </div>
@@ -35,17 +35,31 @@
         </div>
     </section>
 
-    <section class="flex justify-between flex-col md:flex-row px-8 md:px-28 bg-blue-50 py-16 mb-12">
+    <section class="flex justify-around flex-col md:flex-row px-8 md:px-28 bg-blue-50 py-16 mb-12">
         <div class="md:w-2/5">
             <img src="https://image.freepik.com/free-vector/portrait-woman-get-sick-she-is-coughing-suffering-from-chest-pain-coronavirus-2019-ncov-flu-health-medical-illustration_253263-32.jpg   " alt="">
         </div>
-        <div class="md:w-3/6 flex flex-col justify-center text-left py-5">
+        <div class="md:w-3/6 flex flex-col justify-center text-justify py-5">
             <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Gejala Covid-19</h1>
             <p class="md:text-lg">Gejala awal infeksi COVID-19 bisa menyerupai gejala flu, yaitu <span class="font-semibold">demam, pilek, batuk kering, sakit tenggorokan, dan sakit kepala</span>. Setelah itu, gejala dapat hilang dan sembuh atau malah memberat. Penderita dengan gejala yang berat bisa mengalami demam tinggi, batuk berdahak atau berdarah, sesak napas, dan nyeri dada. Gejala-gejala tersebut di atas muncul ketika tubuh bereaksi melawan virus COVID-19.</p>
         </div>
     </section>
 
+    <section class="flex flex-col-reverse justify-around bg-blue-50 py-16 mb-12 md:flex-row">
+        <div class="md:w-3/6 flex flex-col justify-center text-justify py-5 px-8">
+            <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Varian Alfa</h1>
+            <p class="md:text-lg">COVID-19 varian Alfa diketahui lebih cepat menular dan menyebar karena lebih mampu menembus sistem kekebalan tubuh manusia. Bahkan, sejak April 2021 varian ini sudah menjadi salah satu varian virus Corona yang dominan di Amerika Serikat dan Inggris.</p>
+            <br>
+            <p class="md:text-lg">Laporan kasus sejauh ini menunjukkan bahwa pasien COVID-19 yang terinfeksi virus Corona varian Alfa bisa mengalami gejala yang lebih parah. Namun, pada orang yang telah menerima vaksin COVID-19, gejala infeksi virus Corona varian ini umumnya lebih ringan.</p>
+        </div>
+        <div class="md:w-2/5">
+            <div class="">
+                <img src="https://png.pngtree.com/png-vector/20200317/ourlarge/pngtree-covid-19-coronavirus-wuhan-vector-illustration-png-image_2162376.jpg" alt="" class="">
+            </div>
+        </div>
+    </section>
 
+    
 
     <section class="max-h-80 border-gray-200 flex overflow-x-auto overflow-y-hidden mx-auto w-5/6 no-scrollbar pb-1" id="section-news">
         <a href="#" class="news-card w-24 h-52 text-left bg-gray-100 mx-1 shadow-md flex flex-col">
