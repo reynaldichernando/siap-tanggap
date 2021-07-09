@@ -55,6 +55,16 @@
         </div>
     </section>
 
+    <section class="flex justify-around flex-col md:flex-row px-8 md:px-28 bg-blue-50 py-16 mb-12">
+        <div class="md:w-2/5">
+            <img src="{{URL::asset('/images/doctor-colour.svg')}}" alt="">
+        </div>
+        <div class="md:w-3/6 flex flex-col justify-center text-justify py-5">
+            <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Kenapa Harus Vaksin?</h1>
+            <p class="md:text-lg">Melalui vaksin, tubuh akan terlindungi dengan cara membentuk respons antibodi tanpa harus sakit terlebih dahulu. Artinya, vaksin COVID-19 mampu melindungi tubuh seseorang dari infeksi virus corona. Tidak hanya itu, jika kamu terinfeksi virus penyebab COVID-19, vaksin bisa membantu mencegah tubuhmu dari sakit parah atau potensi munculnya komplikasi serius.</p>
+        </div>
+    </section>
+
     <section class="flex flex-col items-center mx-2 content-between">
         <div class="text-2xl md:text-6xl font-semibold text-purple-300 mb-12">
             Jenis-jenis Vaksin
@@ -68,10 +78,10 @@
                 </div>
                 <div class="p-8">
                     <div class="text-green-600 text-2xl md: text-4xl mb-8">
-                        Astrazeneca
+                        AstraZeneca
                     </div>
                     <div>
-                    AstraZeneca menggunakan virus adeno hidup (adenovirus) yang telah dimodifikasi sebagai 'pengirim' protein khusus. Protein tersebut akan menginstruksikan sel tubuh untuk memproduksi sebagian kecil dari virus Corona yang kemudian memicu respons imun.
+                        AstraZeneca menggunakan virus adeno hidup (adenovirus) yang telah dimodifikasi sebagai 'pengirim' protein khusus. Protein tersebut akan menginstruksikan sel tubuh untuk memproduksi sebagian kecil dari virus Corona yang kemudian memicu respons imun.
                     </div>
                 </div>
             </div>
