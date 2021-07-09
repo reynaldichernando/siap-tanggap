@@ -32,6 +32,7 @@
 
         .no-scrollbar::-webkit-scrollbar-thumb {
             border-radius: 10px;
+            box-shadow: 0;
             -webkit-box-shadow: inset 0 0 6px     rgb(129, 145, 167);
         }
 
