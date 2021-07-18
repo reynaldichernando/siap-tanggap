@@ -119,7 +119,7 @@
                         <li><strong>Kode varian:</strong> B. 1.1.7</li>
                         <li><strong>Kasus pertama kali ditemukan:</strong> Inggris, September 2020</li>
                         <li><strong>Tingkat penularan virus:</strong> 43–90% lebih mudah menular dari virus Corona sebelumnya</li>
-                        <li><strong>Tingkat keparahan infeksi:</strong> lebih berpotensi menimbulkan gejala berat dan risiko peningkatan risiko rawat inap dari virus Corona jenis awal</li>
+                        <li><strong>Tingkat keparahan infeksi:</strong> lebih berpotensi menimbulkan gejala berat dan peningkatan risiko rawat inap dari virus Corona jenis awal</li>
                     </ul>
                 </div>
                 </div>
@@ -131,7 +131,7 @@
                         <li><strong>Kode varian:</strong> B. 1.351</li>
                         <li><strong>Kasus pertama kali ditemukan:</strong> Afrika Selatan, Mei 2020</li>
                         <li><strong>Tingkat penularan virus:</strong> belum diketahui</li>
-                        <li><strong>Tingkat keparahan infeksi:</strong> lebih berisiko menyebabkan COVID-19 gejala berat</li>
+                        <li><strong>Tingkat keparahan infeksi:</strong> lebih berisiko menyebabkan gejala berat</li>
                     </ul>
                 </div>
                 </div>
