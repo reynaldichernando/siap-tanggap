@@ -42,6 +42,7 @@
          /* Icon formatting - closed */
          .tab input[type=checkbox] + label::after {
          content: "+";
+         padding-bottom: 4px;
          font-weight:bold; /*.font-bold*/
          border-width: 1px; /*.border*/
          border-radius: 9999px; /*.rounded-full */
@@ -113,7 +114,7 @@
                 <div class="tab w-full overflow-hidden border-t">
                 <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
                 <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">Varian Alfa</label>
-                <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal pl-8">
+                <div class="tab-content overflow-hidde bg-gray-100 leading-normal pl-8">
                     <ul class="list-disc py-4">
                         <li><strong>Kode varian:</strong> B. 1.1.7</li>
                         <li><strong>Kasus pertama kali ditemukan:</strong> Inggris, September 2020</li>
@@ -125,7 +126,7 @@
                 <div class="tab w-full overflow-hidden border-t">
                 <input class="absolute opacity-0" id="tab-multi-two" type="checkbox" name="tabs">
                 <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">Varian Beta</label>
-                <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal pl-8">
+                <div class="tab-content overflow-hidden bg-gray-100 leading-normal pl-8">
                     <ul class="list-disc py-4">
                         <li><strong>Kode varian:</strong> B. 1.351</li>
                         <li><strong>Kasus pertama kali ditemukan:</strong> Afrika Selatan, Mei 2020</li>
@@ -137,7 +138,7 @@
                 <div class="tab w-full overflow-hidden border-t">
                 <input class="absolute opacity-0" id="tab-multi-three" type="checkbox" name="tabs">
                 <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-three">Varian Gamma</label>
-                <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal pl-8">
+                <div class="tab-content overflow-hidden bg-gray-100 leading-normal pl-8">
                     <ul class="list-disc py-4">
                         <li><strong>Kode varian:</strong> P. 1</li>
                         <li><strong>Kasus pertama kali ditemukan:</strong> Brazil, November 2020</li>
@@ -150,7 +151,7 @@
                 <div class="tab w-full overflow-hidden border-t">
                 <input class="absolute opacity-0" id="tab-multi-four" type="checkbox" name="tabs">
                 <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-four">Varian Delta</label>
-                <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal pl-8">
+                <div class="tab-content overflow-hidden bg-gray-100 leading-normal pl-8">
                     <ul class="list-disc py-4">
                         <li><strong>Kode varian:</strong> B.1.617.2</li>
                         <li><strong>Kasus pertama kali ditemukan:</strong> India, Oktober 2020</li>
@@ -163,7 +164,7 @@
                 <div class="tab w-full overflow-hidden border-t">
                 <input class="absolute opacity-0" id="tab-multi-five" type="checkbox" name="tabs">
                 <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-five">Varian Lambda</label>
-                <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal pl-8">
+                <div class="tab-content overflow-hidden bg-gray-100 leading-normal pl-8">
                     <ul class="list-disc py-4">
                         <li><strong>Kode varian:</strong> C. 37</li>
                         <li><strong>Kasus pertama kali ditemukan:</strong> Peru, Desember 2020</li>
@@ -176,7 +177,7 @@
                 <div class="tab w-full overflow-hidden border-t">
                 <input class="absolute opacity-0" id="tab-multi-six" type="checkbox" name="tabs">
                 <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-six">Varian Kappa</label>
-                <div class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal pl-8">
+                <div class="tab-content overflow-hidden bg-gray-100 leading-normal pl-8">
                     <ul class="list-disc py-4">
                         <li><strong>Kode varian:</strong> 1.617.2</li>
                         <li><strong>Kasus pertama kali ditemukan:</strong> India, Oktober 2020</li>
@@ -293,19 +294,5 @@
 
 @section('custom-script')
 <script>
-      /* Optional Javascript to close the radio button version by clicking it again */
-      var myRadios = document.getElementsByName('tabs2');
-      var setCheck;
-      var x = 0;
-      for(x = 0; x < myRadios.length; x++){
-          myRadios[x].onclick = function(){
-              if(setCheck != this){
-                   setCheck = this;
-              }else{
-                  this.checked = false;
-                  setCheck = null;
-          }
-          };
-      }
-   </script>
+</script>
 @endsection
