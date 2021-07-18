@@ -8,12 +8,15 @@
 
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         .news-card{
             min-width: 15rem;
             border-radius: 0.25rem;
             overflow: hidden;
+        }
+
+        .max-h-0 {
+            max-height: 0;
         }
 
         .news-card:hover{
@@ -65,10 +68,11 @@
 
             
         }
-
-
+        
 
     </style>
+
+    @yield('custom-style')
 
 </head>
 <body>
@@ -130,4 +134,7 @@
     </div>
     
 </body>
+
+@yield('custom-script')
+
 </html>

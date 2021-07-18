@@ -13,19 +13,19 @@
             </svg>
         </div>
         <div class="flex flex-col md:flex-row justify-between items-center w-5/6">
-            <select name="vacc-province" id="vacc-province" class="flex-1 mx-2 border-2 border-purple-300 rounded focus:outline-none text-lg p-2">
+            <select name="vacc-province" id="vacc-province" class="flex-1 mx-2 border-2 border-purple-300 rounded focus:outline-none text-lg p-2 cursor-pointer">
                 <option value="">Pilih Provinsi</option>
                 <option value="1">DKI Jakarta</option>
                 <option value="2">Kepulauan Riau</option>
             </select>
 
-            <select name="vacc-city" id="vacc-city" class="flex-1 mx-2 border-2 border-purple-300 rounded focus:outline-none text-lg p-2">
+            <select name="vacc-city" id="vacc-city" class="flex-1 mx-2 border-2 border-purple-300 rounded focus:outline-none text-lg p-2 cursor-pointer">
                 <option value="">Pilih Kota</option>
                 <option value="1">Jakarta Barat</option>
                 <option value="2">Batam</option>
             </select>
 
-            <select name="vacc-hospital" id="vacc-hospital" class="flex-1 mx-2 border-2 border-purple-300 rounded focus:outline-none text-lg p-2">
+            <select name="vacc-hospital" id="vacc-hospital" class="flex-1 mx-2 border-2 border-purple-300 rounded focus:outline-none text-lg p-2 cursor-pointer">
                 <option value="">Pilih Rumah Sakit</option>
                 <option value="1">Awal Bros</option>
                 <option value="2">Klinik Tong Fang</option>
@@ -77,7 +77,7 @@
                     <img src="https://asset.kompas.com/crops/TuY9x76vXHPmw-KGVFzoohSvhxM=/8x65:1000x727/750x500/data/photo/2021/03/20/6055b465e9435.jpg" alt="" >
                 </div>
                 <div class="p-8">
-                    <div class="text-green-600 text-2xl md: text-4xl mb-8">
+                    <div class="text-green-600 text-2xl md:text-4xl mb-8">
                         AstraZeneca
                     </div>
                     <div>
@@ -91,7 +91,7 @@
                     <img src="https://static.straitstimes.com.sg/s3fs-public/styles/article_pictrure_780x520_/public/articles/2021/07/07/nz_sinovac_070721.jpg?itok=BY70dHOy&timestamp=1625628112" alt="">
                 </div>
                 <div class=" p-8">
-                    <div class="text-red-600 text-2xl md: text-4xl mb-8">
+                    <div class="text-red-600 text-2xl md:text-4xl mb-8">
                         Sinovac
                     </div>
                     <div>
@@ -105,7 +105,7 @@
                     <img src="https://asset.kompas.com/crops/rRp1NG4m7nR1Ta7ofeNoCn-dJYU=/0x0:1000x667/750x500/data/photo/2021/05/06/6093619da1817.jpg" alt="">
                 </div>
                 <div class=" p-8">
-                    <div class="text-purple-600 text-2xl md: text-4xl mb-8">
+                    <div class="text-purple-600 text-2xl md:text-4xl mb-8">
                         Sinopharm
                     </div>
                     <div>
