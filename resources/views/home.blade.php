@@ -1,5 +1,5 @@
 
-@extends('layout')
+@extends('layouts.app')
 
 @section('custom-style')
     <style>
@@ -61,7 +61,7 @@
     </style>
 @endsection
 
-@section('main-content')
+@section('content')
 
     
 

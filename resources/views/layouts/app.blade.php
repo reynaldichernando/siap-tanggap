@@ -116,7 +116,6 @@
 
         <div class="mt-14 mb-28 main-content">
             @yield('content')
-            @yield('main-content')
         </div>
 
         <footer class="flex items-end justify-center bg-gray-800 text-white p-5 md:px-24">

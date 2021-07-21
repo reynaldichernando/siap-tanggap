@@ -1,6 +1,6 @@
-@extends('layout')
+@extends('layouts.app')
 
-@section('main-content')
+@section('content')
     
     <section class="flex flex-col items-center mb-12">
         <h1 class="text-2xl md:text-8xl font-semibold mb-8">Lokasi Vaksinasi</h1>
