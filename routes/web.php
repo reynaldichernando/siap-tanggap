@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\VaccinationController;
 use Illuminate\Support\Facades\Auth;
 
@@ -21,7 +22,8 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/vaccination', [VaccinationController::class, 'index']);
+Route::get('/vaccination', [VaccinationController::class, 'index'])->name('vaccination');
+Route::get('/discussion', [PostController::class, 'index'])->name('discussion');
 Auth::routes([
     'reset' => false
 ]);
