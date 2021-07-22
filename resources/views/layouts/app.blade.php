@@ -85,11 +85,11 @@
                 <nav>
                     <div class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
-                            href="{{ url('/home') }}">Beranda</a>
+                            href="{{ route('home') }}">Beranda</a>
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
-                            href="{{ url('/vaccination') }}">Lokasi Vaksinasi</a></li>
+                            href="{{ route('vaccination') }}">Lokasi Vaksinasi</a></li>
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
-                            href="#">Forum
+                            href="{{ route('discussion') }}">Forum
                             Diskusi</a>
                         @guest
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
@@ -114,7 +114,7 @@
             </div>
         </header>
 
-        <div class="mt-14 mb-28 main-content">
+        <div class="my-14 main-content flex-1">
             @yield('content')
         </div>
 
