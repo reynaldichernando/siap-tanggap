@@ -15,7 +15,7 @@ class PostController extends Controller
      */
     public function index(Request $request)
     {
-        $posts = Post::orderBy('created_at', 'desc');
+        $posts = Post::with(['user'])->orderBy('created_at', 'desc');
         return $posts->simplePaginate(6)->appends(request()->input());
     }
 
