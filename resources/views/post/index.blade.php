@@ -2,6 +2,7 @@
 
 @section('content')
 <main class="flex flex-col items-center">
+    @auth
     <div class="flex flex-col md:flex-row w-11/12 md:w-3/5 lg:w-1/2 bg-white p-4 rounded shadow">
         <div class="h-10 w-10 mr-4 bg-blue-300 rounded-full hidden md:block"></div>
         <form class="flex flex-col w-full" action="">
@@ -23,6 +24,7 @@
             </div>
         </form>
     </div>
+    @endauth
     <h1 class="text-3xl m-8">Posts</h1>
     <div class="flex flex-col w-full items-center" id="post-list">
 
@@ -48,7 +50,6 @@
     fetch(URL)
     .then(response => response.json())
     .then(data => {
-        console.log(data);
         let postListElement = document.querySelector('#post-list');
         data.data.forEach(post => {
             postListElement.innerHTML += createPostItemTemplate(post.id, post.user.name, post.description)
