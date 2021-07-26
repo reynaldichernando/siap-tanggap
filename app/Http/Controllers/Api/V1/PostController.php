@@ -13,9 +13,10 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return Post::all();
+        $posts = Post::orderBy('created_at', 'desc');
+        return $posts->simplePaginate(6)->appends(request()->input());
     }
 
     /**
