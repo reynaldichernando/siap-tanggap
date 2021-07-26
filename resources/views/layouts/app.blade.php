@@ -114,7 +114,7 @@
             </div>
         </header>
 
-        <div class="my-14 main-content flex-1">
+        <div class="main-content flex-1">
             @yield('content')
         </div>
 
