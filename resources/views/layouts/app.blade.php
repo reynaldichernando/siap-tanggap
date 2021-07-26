@@ -120,7 +120,7 @@
 
         <footer class="flex items-end justify-center bg-gray-800 text-white p-5 md:px-24">
             <div
-                class="flex justify-between min-w-full h-full md:h-52 flex-col md:flex-row gap-y-5 divide-y-2 divide-blue-100 divide-solid md:divide-none">
+                class="flex justify-between min-w-full h-full md:h-52 flex-col lg:flex-row gap-y-5 divide-y-2 divide-blue-100 divide-solid lg:divide-none">
                 <div class="flex flex-col items-start">
                     <div class="font-bold md:text-3xl">
                         Binus40TahunBerkarya
@@ -144,6 +144,8 @@
             </div>
         </footer>
     </div>
+
+    @stack('scripts')
 </body>
 
 </html>
