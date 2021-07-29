@@ -206,87 +206,23 @@
          </div>
     </section>
 
-    <section class="max-h-80 border-gray-200 flex overflow-x-auto overflow-y-hidden mx-auto w-5/6 no-scrollbar pb-1" id="section-news">
-        <a href="#" class="news-card w-24 h-52 text-left bg-gray-100 mx-1 shadow-md flex flex-col">
-            <div class="">
-                <img class="object-cover" src="https://cdn1-production-images-kly.akamaized.net/4bvbAuZWibTVBWEqqdb8o3NLZX0=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3499878/original/044370100_1625281607-1280X720.jpg" alt="">
-            </div>
-            <div class="p-1 text-sm overflow-hidden">
-                Berita Virus Corona COVID-19 Hari Ini - Kabar Terbaru Terkini | Liputan6.com
-            </div>
-        </a>
-        <a href="#" class="news-card w-24 h-52 text-left bg-gray-100 mx-1 shadow-md flex flex-col">
-            <div class="">
-                <img class="object-cover" src="https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmFuZG9tfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
-            </div>
-            <div class="p-1 text-sm overflow-hidden">
-                Berita Virus Corona COVID-19 Hari Ini - Kabar Terbaru Terkini | Liputan6.com
-            </div>
-        </a>
-        <a href="#" class="news-card w-24 h-52 text-left bg-gray-100 mx-1 shadow-md flex flex-col">
-            <div class="">
-                <img class="object-cover" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/03/Among-Us-Random-Name-Generator.jpg" alt="">
-            </div>
-            <div class="p-1 text-sm overflow-hidden">
-                Berita Virus Corona COVID-19 Hari Ini - Kabar Terbaru Terkini | Liputan6.com
-            </div>
-        </a>
-        <a href="#" class="news-card w-24 h-52 text-left bg-gray-100 mx-1 shadow-md flex flex-col">
-            <div class="">
-                <img class="object-cover" src="https://i.ytimg.com/vi/D0fq67Fyvls/maxresdefault.jpg" alt="">
-            </div>
-            <div class="p-1 text-sm overflow-hidden">
-                Berita Virus Corona COVID-19 Hari Ini - Kabar Terbaru Terkini | Liputan6.com
-            </div>
-        </a>
-        <a href="#" class="news-card w-24 h-52 text-left bg-gray-100 mx-1 shadow-md flex flex-col">
-            <div class="">
-                <img class="object-cover" src="https://images2.minutemediacdn.com/image/upload/c_fill,w_912,h_516,f_auto,q_auto,g_auto/shape/cover/sport/5c4b4fc02e4e3c90fa000001.jpeg" alt="">
-            </div>
-            <div class="p-1 text-sm overflow-hidden">
-                Berita Virus Corona COVID-19 Hari Ini - Kabar Terbaru Terkini | Liputan6.com
-            </div>
-        </a>
-        <a href="#" class="news-card w-24 h-52 text-left bg-gray-100 mx-1 shadow-md flex flex-col">
-            <div class="">
-                <img class="object-cover" src="https://images2.minutemediacdn.com/image/upload/c_fill,w_912,h_516,f_auto,q_auto,g_auto/shape/cover/sport/5c4b4f58545610dfc8000001.jpeg" alt="">
-            </div>
-            <div class="p-1 text-sm overflow-hidden">
-                Berita Virus Corona COVID-19 Hari Ini - Kabar Terbaru Terkini | Liputan6.com
-            </div>
-        </a>
-        <a href="#" class="news-card w-24 h-52 text-left bg-gray-100 mx-1 shadow-md flex flex-col">
-            <div class="">
-                <img class="object-cover" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg" alt="">
-            </div>
-            <div class="p-1 text-sm overflow-hidden">
-                Berita Virus Corona COVID-19 Hari Ini - Kabar Terbaru Terkini | Liputan6.com
-            </div>
-        </a>
-        <a href="#" class="news-card w-24 h-52 text-left bg-gray-100 mx-1 shadow-md flex flex-col">
-            <div class="">
-                <img class="object-cover" src="https://cdns.klimg.com/merdeka.com/i/w/news/2021/06/24/1322429/540x270/lampu-merah-kematian-anak-indonesia-karena-covid-19-rev-1.jpg" alt="">
-            </div>
-            <div class="p-1 text-sm overflow-hidden">
-                Berita Virus Corona COVID-19 Hari Ini - Kabar Terbaru Terkini | Liputan6.com
-            </div>
-        </a>
-        <a href="#" class="news-card w-24 h-52 text-left bg-gray-100 mx-1 shadow-md flex flex-col">
-            <div class="">
-                <img class="object-cover" src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/360x192/webp/photo/2021/02/09/2671496043.jpg?v=202107" alt="">
-            </div>
-            <div class="p-1 text-sm overflow-hidden">
-                Berita Virus Corona COVID-19 Hari Ini - Kabar Terbaru Terkini | Liputan6.com
-            </div>
-        </a>
-        <a href="#" class="news-card w-24 h-52 text-left bg-gray-100 mx-1 shadow-md flex flex-col">
-            <div class="">
-                <img class="object-cover" src="https://cdn.antaranews.com/cache/800x533/2021/04/13/WhatsApp-Image-2021-04-13-at-04.02.21.jpeg" alt="">
-            </div>
-            <div class="p-1 text-sm overflow-hidden">
-                Berita Virus Corona COVID-19 Hari Ini - Kabar Terbaru Terkini | Liputan6.com
-            </div>
-        </a>
+
+    <section class="">
+        <h1 class="text-center text-2xl md:text-4xl mb-4 font-semibold">
+            Berita Terkini
+        </h1>
+        <div class="border-gray-200 flex flex-col overflow-x-auto overflow-y-hidden mx-auto w-5/6 no-scrollbar pb-1" id="section-news">
+            <a href="https://kesehatan.kontan.co.id/news/long-covid-mengganggu-aktivitas-apakah-bisa-disembuhkan" target="_blank" class="flex flex-row space-y-2 items-center justify-center h-full bg-gray-800 rounded-xl space-x-10 p-2 text-white hover:text-black hover:bg-gray-300 transition duration-300 ease-in-out">
+                <div class="w-2/3">
+                    <p class="w-full text-2xl font-semibold">Long Covid mengganggu aktivitas, apakah bisa disembuhkan? - Kontan</p>
+                    <br>
+                    <p class="w-full pb-8 text-sm tracking-wide leading-tight">Long covid adalah kondisi di mana seorang penyintas Covid-19 telah dinyatakan negatif tapi masih memiliki gejala.</p>
+                </div>
+                <div class="w-1/5">
+                    <img class="flex-1 h-full rounded-lg" src="https://foto.kontan.co.id/rqk_I9g1hWTsyvjaJjJD4eiaGBo=/smart/2021/02/18/415385623p.jpg"" />
+                </div>
+            </a>
+        </div>
         
     </section>
 
