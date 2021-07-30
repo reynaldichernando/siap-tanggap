@@ -35,7 +35,7 @@
     </section>
 
 
-    <section class="flex flex-col-reverse justify-around bg-purple-50 py-16 mb-12 md:flex-row items-center">
+    <section class="flex flex-col-reverse justify-around bg-purple-50 py-16 mb-12 md:flex-row items-center leading-relaxed">
         <div class="md:w-3/6 flex flex-col justify-center text-justify py-5 px-8">
             <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Apa itu Vaksin?</h1>
             <div class="">
@@ -55,7 +55,7 @@
         </div>
     </section>
 
-    <section class="flex justify-around items-center flex-col md:flex-row px-8 md:px-28 bg-blue-50 py-16 mb-12">
+    <section class="flex justify-around items-center flex-col md:flex-row px-8 md:px-28 bg-blue-50 py-16 mb-12 leading-relaxed">
         <div class="md:w-2/5 w-3/5">
             <img src="{{URL::asset('/images/doctor-colour.svg')}}" alt="" class=" w-full h-full">
         </div>
@@ -65,7 +65,7 @@
         </div>
     </section>
 
-    <section class="flex flex-col items-center mx-2 content-between">
+    <section class="flex flex-col items-center mx-2 content-between leading-relaxed">
         <div class="text-2xl md:text-6xl font-semibold text-purple-300 mb-12">
             Jenis-jenis Vaksin
         </div>
@@ -76,8 +76,8 @@
                 <div class="">
                     <img src="https://asset.kompas.com/crops/TuY9x76vXHPmw-KGVFzoohSvhxM=/8x65:1000x727/750x500/data/photo/2021/03/20/6055b465e9435.jpg" alt="" >
                 </div>
-                <div class="p-8">
-                    <div class="text-green-600 text-2xl md:text-4xl mb-8">
+                <div class="p-8 pb-2">
+                    <div class="text-green-600 text-2xl md:text-4xl mb-2">
                         AstraZeneca
                     </div>
                     <div>
@@ -90,8 +90,8 @@
                 <div class="">
                     <img src="https://static.straitstimes.com.sg/s3fs-public/styles/article_pictrure_780x520_/public/articles/2021/07/07/nz_sinovac_070721.jpg?itok=BY70dHOy&timestamp=1625628112" alt="">
                 </div>
-                <div class=" p-8">
-                    <div class="text-red-600 text-2xl md:text-4xl mb-8">
+                <div class=" p-8 pb-2">
+                    <div class="text-red-600 text-2xl md:text-4xl mb-2">
                         Sinovac
                     </div>
                     <div>
@@ -104,8 +104,8 @@
                 <div class="">
                     <img src="https://asset.kompas.com/crops/rRp1NG4m7nR1Ta7ofeNoCn-dJYU=/0x0:1000x667/750x500/data/photo/2021/05/06/6093619da1817.jpg" alt="">
                 </div>
-                <div class=" p-8">
-                    <div class="text-purple-600 text-2xl md:text-4xl mb-8">
+                <div class=" p-8 pb-2">
+                    <div class="text-purple-600 text-2xl md:text-4xl mb-2   ">
                         Sinopharm
                     </div>
                     <div>
