@@ -69,7 +69,7 @@
         <header
             class="md:px-16 h-16 md:h-24 px-6 bg-white flex flex-wrap items-center py-4 sticky top-0 shadow-sm">
             <div class="flex-1 flex justify-between items-center">
-                <a href="{{ url('/') }}" class="font-bold text-2xl md:text-4xl text-blue-400">
+                <a href="{{ url('/') }}" class="font-bold text-2xl text-blue-400">
                     {{ config('app.name', 'Laravel') }}
                 </a>
             </div>
