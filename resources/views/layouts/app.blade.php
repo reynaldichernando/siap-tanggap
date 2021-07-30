@@ -117,7 +117,7 @@
             @yield('content')
         </div>
 
-        <footer class="flex items-end justify-center bg-gray-800 text-white p-5 md:px-24">
+        <footer class="flex items-end justify-center bg-gray-800 text-white p-5 md:px-24 leading-relaxed">
             <div
                 class="flex justify-between min-w-full h-full md:h-52 flex-col lg:flex-row gap-y-5 divide-y-2 divide-blue-100 divide-solid lg:divide-none">
                 <div class="flex flex-col items-start">
@@ -132,12 +132,12 @@
                 </div>
                 <div class="flex flex-col items-start">
                     <div class="md:text-xl font-semibold">Contact us:</div>
-                    <a href="#">binus40tahunberkarya@binus.edu</a>
+                    <a>binus40tahunberkarya@binus.edu</a>
                 </div>
                 <div class="flex flex-col items-start">
                     <div class="md:text-xl font-semibold">Author:</div>
-                    <a href="#">Reynaldi Chernando</a>
-                    <a href="#">Stephen Leonardo</a>
+                    <a>Reynaldi Chernando</a>
+                    <a>Stephen Leonardo</a>
                 </div>
             </div>
         </footer>
