@@ -46,7 +46,7 @@ class HomeController extends Controller
         $response = json_decode($response, true);
         $response['articles'];
 
-        $news = array_slice($response['articles'], 0, 5);
+        $news = array_slice($response['articles'], 0, 4);
 
         return view('home', [
             "news"=> $news
