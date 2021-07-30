@@ -89,15 +89,14 @@
             <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Apa itu Covid-19?</h1>
             <p class="md:text-lg">COVID-19 adalah penyakit yang disebabkan oleh virus severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). COVID-19 dapat menyebabkan gangguan sistem pernapasan, mulai dari gejala yang ringan seperti flu, hingga infeksi paru-paru, seperti pneumonia.</p>
         </div>
-        <div class="md:w-2/5">
-            <div class="">
-                <img src="https://png.pngtree.com/png-vector/20200317/ourlarge/pngtree-covid-19-coronavirus-wuhan-vector-illustration-png-image_2162376.jpg" alt="" class="">
-            </div>
+        <div class="w-2/5 mx-auto">
+            <img src="{{URL::asset('/images/pablo-573.png')}}" alt="">
+            <div class="text-sm text-center text-gray-300 mt-2">Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a></a></div>
         </div>
     </section>
 
     <section class="flex justify-around flex-col md:flex-row px-8 md:px-28 bg-blue-50 py-4 mb-12">
-        <div class="md:w-2/5">
+        <div class="w-2/5 mx-auto">
             <img src="{{URL::asset('/images/pablo-578.png')}}" alt="">
             <div class="text-sm text-center text-gray-300 mt-2">Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a></div>
         </div>
