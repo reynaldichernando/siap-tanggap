@@ -1,9 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<main class="flex flex-col items-center">
+<main class="flex flex-col items-center py-8">
+    <h1 class="text-4xl">Posts</h1>
     @auth
-    <div class="flex flex-col md:flex-row w-11/12 md:w-3/5 lg:w-1/2 bg-white p-4 rounded shadow">
+    <div class="flex flex-col md:flex-row w-11/12 md:w-3/5 lg:w-1/2 bg-white p-4 rounded shadow my-8">
         <div class="h-10 w-10 mr-4 bg-blue-300 rounded-full hidden md:block"></div>
         <form class="flex flex-col w-full" action="">
             <div class="flex flex-col flex-1">
@@ -25,7 +26,6 @@
         </form>
     </div>
     @endauth
-    <h1 class="text-4xl m-8">Posts</h1>
     <div class="flex flex-col w-full items-center" id="post-list">
 
     </div>
