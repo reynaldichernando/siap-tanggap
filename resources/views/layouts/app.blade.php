@@ -89,8 +89,7 @@
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
                             href="{{ route('vaccination') }}">Lokasi Vaksinasi</a></li>
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
-                            href="{{ route('discussion') }}">Forum
-                            Diskusi</a>
+                            href="{{ route('discussion') }}">Forum Diskusi</a>
                         @guest
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
                             href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -118,7 +117,7 @@
             @yield('content')
         </div>
 
-        <footer class="flex items-end justify-center bg-gray-800 text-white p-5 md:px-24">
+        <footer class="flex items-end justify-center bg-gray-800 text-white p-5 md:px-24 leading-relaxed">
             <div
                 class="flex justify-between min-w-full h-full md:h-52 flex-col lg:flex-row gap-y-5 divide-y-2 divide-blue-100 divide-solid lg:divide-none">
                 <div class="flex flex-col items-start">
@@ -127,19 +126,18 @@
                     </div>
                 </div>
                 <div class="flex flex-col items-start">
-                    <a href="#">Beranda</a>
-                    <a href="#">Lokasi Vaksinasi</a>
-                    <a href="#">Berita</a>
-                    <a href="#">Forum Diskusi</a>
+                    <a href="{{ route('home') }}">Beranda</a>
+                    <a href="{{ route('vaccination') }}">Lokasi Vaksinasi</a>
+                    <a href="{{ route('discussion') }}">Forum Diskusi</a>
                 </div>
                 <div class="flex flex-col items-start">
                     <div class="md:text-xl font-semibold">Contact us:</div>
-                    <a href="#">binus40tahunberkarya@binus.edu</a>
+                    <a>binus40tahunberkarya@binus.edu</a>
                 </div>
                 <div class="flex flex-col items-start">
                     <div class="md:text-xl font-semibold">Author:</div>
-                    <a href="#">Reynaldi Chernando</a>
-                    <a href="#">Stephen Leonardo</a>
+                    <a>Reynaldi Chernando</a>
+                    <a>Stephen Leonardo</a>
                 </div>
             </div>
         </footer>

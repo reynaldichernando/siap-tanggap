@@ -103,7 +103,7 @@
             <div
                 class="bg-white flex flex-col items-center rounded-md border-green-300 border-2 mx-5 mb-4 w-72 md:w-96">
                 <div class="">
-                    <img src="https://asset.kompas.com/crops/TuY9x76vXHPmw-KGVFzoohSvhxM=/8x65:1000x727/750x500/data/photo/2021/03/20/6055b465e9435.jpg"
+                    <img src="{{URL::asset('/images/astrazeneca.jpg')}}"
                         alt="">
                 </div>
                 <div class="p-8">
@@ -120,7 +120,7 @@
 
             <div class="bg-white flex flex-col items-center rounded-md border-red-300 border-2 mx-5 mb-4 w-72 md:w-96">
                 <div class="">
-                    <img src="https://static.straitstimes.com.sg/s3fs-public/styles/article_pictrure_780x520_/public/articles/2021/07/07/nz_sinovac_070721.jpg?itok=BY70dHOy&timestamp=1625628112"
+                    <img src="{{URL::asset('/images/sinovac.jpg')}}"
                         alt="">
                 </div>
                 <div class="p-8">
@@ -138,7 +138,7 @@
             <div
                 class="bg-white flex flex-col items-center rounded-md border-purple-300 border-2 mx-5 mb-4 w-72 md:w-96">
                 <div class="">
-                    <img src="https://asset.kompas.com/crops/rRp1NG4m7nR1Ta7ofeNoCn-dJYU=/0x0:1000x667/750x500/data/photo/2021/05/06/6093619da1817.jpg"
+                    <img src="{{URL::asset('/images/sinopharm.jpg')}}"
                         alt="">
                 </div>
                 <div class="p-8">
