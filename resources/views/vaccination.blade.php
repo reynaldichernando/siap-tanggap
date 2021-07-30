@@ -74,7 +74,7 @@
 
             <div class="bg-white my-1 flex-1 flex flex-col items-center hover:bg-green-300 rounded-md border-green-300 border-2 cursor-pointer mx-5">
                 <div class="">
-                    <img src="https://asset.kompas.com/crops/TuY9x76vXHPmw-KGVFzoohSvhxM=/8x65:1000x727/750x500/data/photo/2021/03/20/6055b465e9435.jpg" alt="" >
+                    <img src="{{URL::asset('/images/astrazeneca.jpg')}}" alt="" >
                 </div>
                 <div class="p-8 pb-2">
                     <div class="text-green-600 text-2xl md:text-4xl mb-2">
@@ -88,7 +88,7 @@
 
             <div class="bg-white my-1 flex-1 flex flex-col items-center hover:bg-red-300 rounded-md border-red-300 border-2 cursor-pointer mx-5">
                 <div class="">
-                    <img src="https://static.straitstimes.com.sg/s3fs-public/styles/article_pictrure_780x520_/public/articles/2021/07/07/nz_sinovac_070721.jpg?itok=BY70dHOy&timestamp=1625628112" alt="">
+                    <img src="{{URL::asset('/images/sinovac.jpg')}}" alt="">
                 </div>
                 <div class=" p-8 pb-2">
                     <div class="text-red-600 text-2xl md:text-4xl mb-2">
@@ -102,7 +102,7 @@
 
             <div class="bg-white my-1 flex-1 flex flex-col items-center hover:bg-purple-300 rounded-md border-purple-300 border-2 cursor-pointer mx-5">
                 <div class="">
-                    <img src="https://asset.kompas.com/crops/rRp1NG4m7nR1Ta7ofeNoCn-dJYU=/0x0:1000x667/750x500/data/photo/2021/05/06/6093619da1817.jpg" alt="">
+                    <img src="{{URL::asset('/images/sinopharm.jpg')}}" alt="">
                 </div>
                 <div class=" p-8 pb-2">
                     <div class="text-purple-600 text-2xl md:text-4xl mb-2   ">
