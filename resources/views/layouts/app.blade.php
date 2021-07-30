@@ -81,7 +81,7 @@
                 </svg></label>
             <input class="hidden" type="checkbox" id="menu-toggle" />
 
-            <div class="hidden lg:flex lg:items-center lg:w-auto lg:relative absolute top-16 md:top-24 lg:top-0 w-full left-0 px-4 pb-4 lg:p-0 bg-white shadow-sm" id="menu">
+            <div class="hidden lg:flex lg:items-center lg:w-auto lg:relative absolute top-16 md:top-24 lg:top-0 w-full left-0 px-4 pb-4 lg:p-0 bg-white shadow-sm lg:shadow-none" id="menu">
                 <nav>
                     <div class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
