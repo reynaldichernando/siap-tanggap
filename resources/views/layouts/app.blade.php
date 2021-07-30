@@ -69,7 +69,7 @@
         <header
             class="md:px-16 px-6 bg-white flex flex-wrap items-center md:py-0 py-2 hover:bg-blue-100 transition duration-500 ease-in-out">
             <div class="flex-1 flex justify-between items-center">
-                <a href="{{ url('/') }}" class="font-bold text-2xl md:text-4xl text-purple-500">
+                <a href="{{ url('/') }}" class="font-bold text-2xl md:text-4xl text-blue-500">
                     {{ config('app.name', 'Laravel') }}
                 </a>
             </div>
@@ -89,8 +89,7 @@
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
                             href="{{ route('vaccination') }}">Lokasi Vaksinasi</a></li>
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
-                            href="{{ route('discussion') }}">Forum
-                            Diskusi</a>
+                            href="{{ route('discussion') }}">Forum Diskusi</a>
                         @guest
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
                             href="{{ route('login') }}">{{ __('Login') }}</a>
@@ -127,10 +126,9 @@
                     </div>
                 </div>
                 <div class="flex flex-col items-start">
-                    <a href="#">Beranda</a>
-                    <a href="#">Lokasi Vaksinasi</a>
-                    <a href="#">Berita</a>
-                    <a href="#">Forum Diskusi</a>
+                    <a href="{{ route('home') }}">Beranda</a>
+                    <a href="{{ route('vaccination') }}">Lokasi Vaksinasi</a>
+                    <a href="{{ route('discussion') }}">Forum Diskusi</a>
                 </div>
                 <div class="flex flex-col items-start">
                     <div class="md:text-xl font-semibold">Contact us:</div>
