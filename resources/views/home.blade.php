@@ -84,7 +84,7 @@
     </section>
 
 
-    <section class="flex flex-col-reverse justify-around bg-blue-50 py-4 mb-12 md:flex-row">
+    <section class="flex flex-col-reverse justify-around bg-blue-50 py-4 mb-12 md:flex-row leading-4 leading-relaxed">
         <div class="md:w-3/6 flex flex-col justify-center text-justify py-5 px-8">
             <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Apa itu Covid-19?</h1>
             <p class="md:text-lg">COVID-19 adalah penyakit yang disebabkan oleh virus severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). COVID-19 dapat menyebabkan gangguan sistem pernapasan, mulai dari gejala yang ringan seperti flu, hingga infeksi paru-paru, seperti pneumonia.</p>
@@ -95,7 +95,7 @@
         </div>
     </section>
 
-    <section class="flex justify-around flex-col md:flex-row px-8 md:px-28 bg-blue-50 py-4 mb-12">
+    <section class="flex justify-around flex-col md:flex-row px-8 md:px-28 bg-blue-50 py-4 mb-12 leading-relaxed">
         <div class="w-2/5 mx-auto">
             <img src="{{URL::asset('/images/pablo-578.png')}}" alt="">
             <div class="text-sm text-center text-gray-300 mt-2">Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a></div>
@@ -190,7 +190,7 @@
         </div>
     </section>
 
-    <section class="flex flex-col justify-around bg-blue-50 py-4 mb-12 md:flex-row">
+    <section class="flex flex-col justify-around bg-blue-50 py-4 mb-12 md:flex-row leading-relaxed">
         <div class="w-full  mx-auto px-8">
         <p class="text-center text-lg md:text-4xl mb-4">Diagnosis Covid-19</p>
         <div class="text-justify text-md md:text-lg">  
@@ -212,14 +212,14 @@
             Berita Terkini
         </h1>
         <div class="border-gray-200 flex flex-col overflow-x-auto overflow-y-hidden mx-auto w-5/6 no-scrollbar pb-1" id="section-news">
-            <a href="https://kesehatan.kontan.co.id/news/long-covid-mengganggu-aktivitas-apakah-bisa-disembuhkan" target="_blank" class="flex flex-row space-y-2 items-center justify-center h-full bg-gray-800 rounded-xl space-x-10 p-2 text-white hover:text-black hover:bg-gray-300 transition duration-300 ease-in-out">
-                <div class="w-2/3">
-                    <p class="w-full text-2xl font-semibold">Long Covid mengganggu aktivitas, apakah bisa disembuhkan? - Kontan</p>
+            <a href="https://kesehatan.kontan.co.id/news/long-covid-mengganggu-aktivitas-apakah-bisa-disembuhkan" target="_blank" class="flex flex-col-reverse md:flex-row space-y-2 items-center justify-center h-full bg-gray-800 rounded-xl space-x-10 p-2 text-white hover:text-black hover:bg-gray-300 transition duration-300 ease-in-out">
+                <div class="md:w-2/3">
+                    <p class="w-full md:text-2xl font-semibold" name="news-title">Long Covid mengganggu aktivitas, apakah bisa disembuhkan? - Kontan</p>
                     <br>
-                    <p class="w-full pb-8 text-sm tracking-wide leading-tight">Long covid adalah kondisi di mana seorang penyintas Covid-19 telah dinyatakan negatif tapi masih memiliki gejala.</p>
+                    <p class="w-full pb-8 text-sm tracking-wide leading-tight" name="news-desc">Long covid adalah kondisi di mana seorang penyintas Covid-19 telah dinyatakan negatif tapi masih memiliki gejala.</p>
                 </div>
-                <div class="w-1/5">
-                    <img class="flex-1 h-full rounded-lg" src="https://foto.kontan.co.id/rqk_I9g1hWTsyvjaJjJD4eiaGBo=/smart/2021/02/18/415385623p.jpg"" />
+                <div class="md:w-1/5">
+                    <img class="flex-1 h-full w-full rounded-lg" src="https://foto.kontan.co.id/rqk_I9g1hWTsyvjaJjJD4eiaGBo=/smart/2021/02/18/415385623p.jpg"" />
                 </div>
             </a>
         </div>
