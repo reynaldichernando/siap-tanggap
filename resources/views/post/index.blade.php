@@ -25,7 +25,7 @@
         </form>
     </div>
     @endauth
-    <h1 class="text-3xl m-8">Posts</h1>
+    <h1 class="text-4xl m-8">Posts</h1>
     <div class="flex flex-col w-full items-center" id="post-list">
 
     </div>
