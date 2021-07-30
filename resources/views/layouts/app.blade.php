@@ -67,9 +67,9 @@
 <body class="bg-gray-100 antialiased leading-none font-sans">
     <div id="app" class="flex min-h-screen flex-col">
         <header
-            class="md:px-16 px-6 bg-white flex flex-wrap items-center md:py-0 py-2 hover:bg-blue-100 transition duration-500 ease-in-out">
+            class="md:px-16 h-16 md:h-24 px-6 bg-white flex flex-wrap items-center py-4 sticky top-0">
             <div class="flex-1 flex justify-between items-center">
-                <a href="{{ url('/') }}" class="font-bold text-2xl md:text-4xl text-purple-500">
+                <a href="{{ url('/') }}" class="font-bold text-2xl md:text-4xl text-blue-400">
                     {{ config('app.name', 'Laravel') }}
                 </a>
             </div>
@@ -81,7 +81,7 @@
                 </svg></label>
             <input class="hidden" type="checkbox" id="menu-toggle" />
 
-            <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+            <div class="hidden md:flex md:items-center md:w-auto md:relative absolute top-16 md:top-0 w-full left-0 px-4 pb-4 md:p-0 bg-white" id="menu">
                 <nav>
                     <div class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
