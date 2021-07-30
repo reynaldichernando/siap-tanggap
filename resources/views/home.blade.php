@@ -98,7 +98,8 @@
 
     <section class="flex justify-around flex-col md:flex-row px-8 md:px-28 bg-blue-50 py-4 mb-12">
         <div class="md:w-2/5">
-            <img src="https://image.freepik.com/free-vector/portrait-woman-get-sick-she-is-coughing-suffering-from-chest-pain-coronavirus-2019-ncov-flu-health-medical-illustration_253263-32.jpg   " alt="">
+            <img src="{{URL::asset('/images/pablo-578.png')}}" alt="">
+            <div class="text-sm text-center text-gray-300 mt-2">Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a></div>
         </div>
         <div class="md:w-3/6 flex flex-col justify-center text-justify py-5">
             <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Gejala Covid-19</h1>
