@@ -229,14 +229,14 @@
     </section>
 
 
-    <section class="">
+    <section class="mb-6">
         <h1 class="text-center text-2xl md:text-4xl mb-4 font-semibold">
             Berita Terkini
         </h1>
-        <div class="border-gray-200 flex flex-col overflow-x-auto overflow-y-hidden mx-auto w-5/6 no-scrollbar pb-1 space-y-8" id="section-news">
+        <div class="border-gray-200 flex flex-col overflow-x-auto overflow-y-hidden mx-auto w-5/6 no-scrollbar pb-1 space-y-2" id="section-news">
 
             @foreach($news as $n)
-                <a href="{{$n['url']}}" target="_blank" class="flex flex-col-reverse md:flex-row items-center justify-center h-full bg-gray-800 rounded-xl md:space-x-10 p-2 text-white hover:text-black hover:bg-gray-300 transition duration-300 ease-in-out">
+                <a href="{{$n['url']}}" target="_blank" class="flex flex-col-reverse md:flex-row items-center justify-center h-full bg-gray-800 rounded-xl md:space-x-10 p-2 text-white hover:text-black hover:bg-gray-200 border border-gray-800 transition duration-300 ease-in-out">
                     <div class="md:w-2/3">
                         <p class="w-full md:text-2xl font-semibold" name="news-title">{{$n['title']}}</p>
                         <br>
