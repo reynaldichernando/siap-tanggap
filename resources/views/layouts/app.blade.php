@@ -67,7 +67,7 @@
 <body class="bg-gray-100 antialiased leading-none font-sans">
     <div id="app" class="flex min-h-screen flex-col">
         <header
-            class="md:px-16 h-16 md:h-24 px-6 bg-white flex flex-wrap items-center py-4 sticky top-0 shadow-sm">
+            class="md:px-16 h-16 md:h-24 px-6 bg-white flex flex-wrap items-center py-4 sticky top-0 shadow-sm z-10">
             <div class="flex-1 flex justify-between items-center">
                 <a href="{{ url('/') }}" class="font-bold text-2xl text-blue-400">
                     {{ config('app.name', 'Laravel') }}
