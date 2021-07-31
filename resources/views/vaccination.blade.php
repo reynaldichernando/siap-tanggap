@@ -113,7 +113,7 @@
 
         <div class="flex flex-row flex-wrap justify-center my-4">
             <div
-                class="bg-white flex flex-col items-center rounded-md border-green-300 border-2 mx-5 mb-4 w-72 md:w-96">
+                class="bg-white flex flex-col items-center rounded-md border-green-300 border-2 mx-4 mb-4 w-72 md:w-96">
                 <div class="">
                     <img src="{{URL::asset('/images/astrazeneca.jpg')}}" alt="">
                 </div>
@@ -129,7 +129,7 @@
                 </div>
             </div>
 
-            <div class="bg-white flex flex-col items-center rounded-md border-red-300 border-2 mx-5 mb-4 w-72 md:w-96">
+            <div class="bg-white flex flex-col items-center rounded-md border-red-300 border-2 mx-4 mb-4 w-72 md:w-96">
                 <div class="">
                     <img src="{{URL::asset('/images/sinovac.jpg')}}" alt="">
                 </div>
@@ -146,7 +146,7 @@
             </div>
 
             <div
-                class="bg-white flex flex-col items-center rounded-md border-purple-300 border-2 mx-5 mb-4 w-72 md:w-96">
+                class="bg-white flex flex-col items-center rounded-md border-purple-300 border-2 mx-4 mb-4 w-72 md:w-96">
                 <div class="">
                     <img src="{{URL::asset('/images/sinopharm.jpg')}}" alt="">
                 </div>
