@@ -91,17 +91,17 @@
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
                             href="{{ route('discussion') }}">Forum Diskusi</a>
                         @guest
-                        <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
+                        <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-yellow-300"
                             href="{{ route('login') }}">{{ __('Login') }}</a>
                         @if (Route::has('register'))
-                        <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
+                        <a class="md:p-4 py-3 px-0 block border-2 border-transparent hover:border-yellow-300 rounded-lg"
                             href="{{ route('register') }}">{{ __('Register') }}</a>
                         @endif
                         @else
                         <span>{{ Auth::user()->name }}</span>
 
                         <a href="{{ route('logout') }}"
-                            class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
+                            class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-300"
                             onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
