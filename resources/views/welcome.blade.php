@@ -35,7 +35,7 @@
                 </svg>
                 </p>
                 <h3 class="text-lg p-4">Lokasi Vaksinasi</h3>
-                <p class="text-xs">Cari tahu lokasi vaksinasi terdekat di daerah anda</p>
+                <p class="text-xs">Cari tahu lokasi vaksinasi terdekat di daerah kamu</p>
             </div>
             <div class='flex-1 border-2 border-dashed border-transparent hover:border-gray-400 cursor-pointer py-2 rounded-xl hover:text-blue-200'>
                 <p class="flex justify-center">
@@ -44,7 +44,7 @@
                 </svg>
                 </p>
                 <h3 class="text-lg p-4">Forum Diskusi</h3>
-                <p class="text-xs">Ajukan pertanyaan dan diskusikan bersama para pengguna yang lain</p>
+                <p class="text-xs">Ajukan pertanyaan dan diskusikan bersama para pengguna lainnya</p>
             </div>
         </div>
     </div>
