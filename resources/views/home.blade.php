@@ -78,20 +78,25 @@
 @endsection
 
 @section('content')
-<section class="flex justify-center flex-row md:py-4 my-5 md:my-18 text-center flex-shrink">
-    <div class="flex justify center flex-col mx-1 md:mx-10">
-        <h2 class="font-bold text-sm md:text-3xl">Jumlah Kasus</h2>
-        <h3 class="md:text-xl font-semibold">2.26 Juta</h3>
-    </div>
-
-    <div class="flex justify center flex-col mx-1 md:mx-10">
-        <h2 class="font-bold text-sm md:text-3xl">Jumlah Kesembuhan</h2>
-        <h3 class="md:text-xl font-semibold">1.9 Juta</h3>
-    </div>
-
-    <div class="flex justify center flex-col mx-1 md:mx-10">
-        <h2 class="font-bold text-sm md:text-3xl">Jumlah Kematian</h2>
-        <h3 class="md:text-xl font-semibold">60 Ribu</h3>
+<section class=" my-5 md:my-18 text-center flex justify-center">
+    <div class="rounded-lg shadow-lg bg-white flex justify-center flex-row flex-shrink w-3/5 md:py-4">
+        <div class="flex justify center flex-col mx-1 md:mx-10">
+            <h2 class="font-bold text-sm md:text-3xl">Jumlah Kasus</h2>
+            <br>
+            <h3 class="md:text-xl font-semibold">2.26 Juta</h3>
+        </div>
+    
+        <div class="flex justify center flex-col mx-1 md:mx-10">
+            <h2 class="font-bold text-sm md:text-3xl">Jumlah Kesembuhan</h2>
+            <br>
+            <h3 class="md:text-xl font-semibold">1.9 Juta</h3>
+        </div>
+    
+        <div class="flex justify center flex-col mx-1 md:mx-10">
+            <h2 class="font-bold text-sm md:text-3xl">Jumlah Kematian</h2>
+            <br>
+            <h3 class="md:text-xl font-semibold">60 Ribu</h3>
+        </div>
     </div>
 </section>
 
