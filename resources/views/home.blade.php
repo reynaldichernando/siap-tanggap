@@ -78,20 +78,25 @@
 @endsection
 
 @section('content')
-<section class="flex justify-center flex-row md:py-4 my-5 md:my-18 text-center flex-shrink">
-    <div class="flex justify center flex-col mx-1 md:mx-10">
-        <h2 class="font-bold text-sm md:text-3xl">Jumlah Kasus</h2>
-        <h3 class="md:text-xl font-semibold">2.26 Juta</h3>
-    </div>
-
-    <div class="flex justify center flex-col mx-1 md:mx-10">
-        <h2 class="font-bold text-sm md:text-3xl">Jumlah Kesembuhan</h2>
-        <h3 class="md:text-xl font-semibold">1.9 Juta</h3>
-    </div>
-
-    <div class="flex justify center flex-col mx-1 md:mx-10">
-        <h2 class="font-bold text-sm md:text-3xl">Jumlah Kematian</h2>
-        <h3 class="md:text-xl font-semibold">60 Ribu</h3>
+<section class=" my-5 md:my-18 text-center flex justify-center">
+    <div class="rounded-lg shadow-lg bg-white flex justify-center flex-row flex-shrink w-3/5 md:py-4">
+        <div class="flex justify center flex-col mx-1 md:mx-10">
+            <h2 class="font-bold text-sm md:text-3xl">Jumlah Kasus</h2>
+            <br>
+            <h3 class="md:text-xl font-semibold">2.26 Juta</h3>
+        </div>
+    
+        <div class="flex justify center flex-col mx-1 md:mx-10">
+            <h2 class="font-bold text-sm md:text-3xl">Jumlah Kesembuhan</h2>
+            <br>
+            <h3 class="md:text-xl font-semibold">1.9 Juta</h3>
+        </div>
+    
+        <div class="flex justify center flex-col mx-1 md:mx-10">
+            <h2 class="font-bold text-sm md:text-3xl">Jumlah Kematian</h2>
+            <br>
+            <h3 class="md:text-xl font-semibold">60 Ribu</h3>
+        </div>
     </div>
 </section>
 
@@ -229,14 +234,14 @@
     </section>
 
 
-    <section class="">
+    <section class="mb-6">
         <h1 class="text-center text-2xl md:text-4xl mb-4 font-semibold">
             Berita Terkini
         </h1>
-        <div class="border-gray-200 flex flex-col overflow-x-auto overflow-y-hidden mx-auto w-5/6 no-scrollbar pb-1 space-y-8" id="section-news">
+        <div class="border-gray-200 flex flex-col overflow-x-auto overflow-y-hidden mx-auto w-5/6 no-scrollbar pb-1 space-y-2" id="section-news">
 
             @foreach($news as $n)
-                <a href="{{$n['url']}}" target="_blank" class="flex flex-col-reverse md:flex-row items-center justify-center h-full bg-gray-800 rounded-xl md:space-x-10 p-2 text-white hover:text-black hover:bg-gray-300 transition duration-300 ease-in-out">
+                <a href="{{$n['url']}}" target="_blank" class="flex flex-col-reverse md:flex-row items-center justify-center h-full bg-gray-800 rounded-xl md:space-x-10 p-2 text-white hover:text-black hover:bg-gray-200 border border-gray-800 transition duration-300 ease-in-out">
                     <div class="md:w-2/3">
                         <p class="w-full md:text-2xl font-semibold" name="news-title">{{$n['title']}}</p>
                         <br>
