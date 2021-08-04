@@ -50,7 +50,10 @@
         <div class="flex flex-col w-11/12 md:w-3/5 lg:w-1/2 mb-4 bg-white p-4 rounded shadow">
             <div class="flex items-center mb-4">
                 <div class="h-10 w-10 mr-4 bg-gray-300 rounded-full"></div>
-                <div class="bg-gray-300 h-4 w-28 rounded-full"></div>
+                <div>
+                    <div class="bg-gray-300 h-4 w-28 rounded-full"></div>
+                    <div class="text-xs mt-2 bg-gray-300 h-3 w-12 rounded-full"></div>
+                </div>
             </div>
             <div class="flex bg-gray-300 h-4 w-full rounded-full mb-2"></div>
             <div class="flex bg-gray-300 h-4 w-full rounded-full mb-2"></div>
@@ -71,11 +74,14 @@
     let loadMoreButton = document.querySelector('#load-more');
     let postSkeletonElement = document.querySelector('#post-skeleton');
 
-    const createPostItemTemplate = (id, username, description, image) => `
+    const createPostItemTemplate = (id, username, description, image, time) => `
     <div class="flex flex-col w-11/12 md:w-3/5 lg:w-1/2 mb-4 bg-white py-4 rounded shadow">
         <div class="flex items-center mb-4 px-4">
             <div class="h-10 w-10 mr-4 bg-blue-300 rounded-full"></div>
-            <div class="font-semibold">${username}</div>
+            <div>
+                <div class="font-semibold">${username}</div>
+                <div class="text-xs mt-2">${time}</div>
+            </div>
         </div>
         <p class="flex flex-col flex-1 leading-snug px-4">${description}</p>
         ${!!image ? 
@@ -105,7 +111,7 @@
         .then(data => {
             let postListElement = document.querySelector('#post-list');
             data.data.forEach(post => {
-                postListElement.innerHTML += createPostItemTemplate(post.id, post.user.name, post.description, post.image)
+                postListElement.innerHTML += createPostItemTemplate(post.id, post.user.name, post.description, post.image, post.human_readable_time)
             });
 
             hideLoader();
