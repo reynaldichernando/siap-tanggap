@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ReplyController;
 use App\Http\Controllers\VaccinationController;
 use Illuminate\Support\Facades\Auth;
 
@@ -22,9 +23,14 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+
 Route::get('/vaccination', [VaccinationController::class, 'index'])->name('vaccination');
+
 Route::get('/discussion', [PostController::class, 'index'])->name('post');
 Route::post('/discussion', [PostController::class, 'store'])->name('post.store');
+Route::get('/discussion/{post}', [PostController::class, 'show'])->name('post.show');
+
+Route::post('/discussion/{post}/replies', [ReplyController::class, 'store'])->name('reply.store');
 Auth::routes([
     'reset' => false
 ]);

@@ -13,7 +13,7 @@
                 <textarea
                     class="shadow appearance-none border rounded mb-4 text-gray-700 resize-none p-2 focus:outline-none focus:shadow-outline leading-snug"
                     name="description" id="description" rows="4" maxlength="200"
-                    placeholder="What are you thinking?"></textarea>
+                    placeholder="What are you thinking?" required></textarea>
                 <div class="flex items-center">
                     <label
                         class="font-bold text-sm text-blue-500 hover:text-blue-800 cursor-pointer"
@@ -34,15 +34,6 @@
             </div>
         </form>
     </div>
-    @if ($errors->any())
-    <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-    @endif
     @endauth
     <div class="flex flex-col w-full items-center mt-8" id="post-list"></div>
 

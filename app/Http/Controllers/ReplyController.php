@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post;
+use App\Models\Reply;
 use Illuminate\Http\Request;
 
-class PostController extends Controller
+class ReplyController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        return view('post.index');
+        //
     }
 
     /**
@@ -35,41 +35,38 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-
         $request->validate([
             'description' => 'required',
-            'image' => 'file|image',
         ]);
-
-        $post = new Post;
-        $post->user_id = $request->user()->id;
-        $post->description = $request->description;
-        if ($request->image)
-            $post->image = $request->file('image')->store('images', 'public');
-
-        $post->save();
-
-        return redirect()->route('post');
+        
+        $reply = new Reply;
+        $reply->user_id = $request->user()->id;
+        $reply->post_id = $request->post;
+        $reply->description = $request->description;
+        
+        $reply->save();
+        
+        return redirect()->back();
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Post  $post
+     * @param  \App\Models\Reply  $reply
      * @return \Illuminate\Http\Response
      */
-    public function show(Post $post)
+    public function show(Reply $reply)
     {
-        return view('post.show', ['post' => $post]);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Post  $post
+     * @param  \App\Models\Reply  $reply
      * @return \Illuminate\Http\Response
      */
-    public function edit(Post $post)
+    public function edit(Reply $reply)
     {
         //
     }
@@ -78,10 +75,10 @@ class PostController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Post  $post
+     * @param  \App\Models\Reply  $reply
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update(Request $request, Reply $reply)
     {
         //
     }
@@ -89,10 +86,10 @@ class PostController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Post  $post
+     * @param  \App\Models\Reply  $reply
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Post $post)
+    public function destroy(Reply $reply)
     {
         //
     }
