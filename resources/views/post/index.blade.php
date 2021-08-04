@@ -27,34 +27,77 @@
         </form>
     </div>
     @endauth
-    <div class="flex flex-col w-full items-center m-8" id="post-list">
+    <div class="flex flex-col w-full items-center mt-8" id="post-list"></div>
 
+    <div class="hidden flex-col w-full items-center animate-pulse" id="post-skeleton">
+        <div class="flex flex-col w-11/12 md:w-3/5 lg:w-1/2 mb-4 bg-white p-4 rounded shadow">
+            <div class="flex items-center mb-4">
+                <div class="h-10 w-10 mr-4 bg-gray-300 rounded-full"></div>
+                <div class="bg-gray-300 h-4 w-28 rounded-full"></div>
+            </div>
+            <div class="flex bg-gray-300 h-4 w-full rounded-full mb-2"></div>
+            <div class="flex bg-gray-300 h-4 w-full rounded-full mb-2"></div>
+            <div class="flex bg-gray-300 h-4 w-4/5 rounded-full"></div>
+            <div class="mt-4 bg-gray-300 h-4 w-24 rounded-full"></div>
+        </div>
     </div>
+
+    <button id="load-more"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-full focus:outline-none"
+        onclick="loadMore()">Load More</button>
 </main>
 @endsection
 
 @push('scripts')
 <script>
-    let URL = '{{ route('posts') }}';
+    let URL = '{{ route('api.posts') }}';
+    let loadMoreButton = document.querySelector('#load-more');
+    let postSkeletonElement = document.querySelector('#post-skeleton');
 
     const createPostItemTemplate = (id, username, description) => `
     <div class="flex flex-col w-11/12 md:w-3/5 lg:w-1/2 mb-4 bg-white p-4 rounded shadow">
-            <div class="flex items-center mb-4">
-                <div class="h-10 w-10 mr-4 bg-blue-300 rounded-full"></div>
-                <p class="font-semibold">${username}</p>
-            </div>
-            <div class="flex flex-col flex-1 leading-snug">${description}</div>
-            <a class="mt-4 self-start text-sm text-gray-700" href="/discussion/${id}">View Replies</a>
+        <div class="flex items-center mb-4">
+            <div class="h-10 w-10 mr-4 bg-blue-300 rounded-full"></div>
+            <div class="font-semibold">${username}</div>
         </div>
+        <p class="flex flex-col flex-1 leading-snug">${description}</p>
+        <a class="mt-4 self-start text-sm text-gray-700" href="/discussion/${id}">View Replies</a>
+    </div>
     `;
 
-    fetch(URL)
-    .then(response => response.json())
-    .then(data => {
-        let postListElement = document.querySelector('#post-list');
-        data.data.forEach(post => {
-            postListElement.innerHTML += createPostItemTemplate(post.id, post.user.name, post.description)
-        });
-    })
+    const showLoader = () => {
+        postSkeletonElement.classList.add('flex');
+        postSkeletonElement.classList.remove('hidden');
+        loadMoreButton.classList.add('hidden');
+    }
+
+    const hideLoader = () => {
+        postSkeletonElement.classList.add('hidden');
+        postSkeletonElement.classList.remove('flex');
+        loadMoreButton.classList.remove('hidden');
+    }
+
+    const loadMore = () => {
+        showLoader();
+
+        fetch(URL)
+        .then(response => response.json())
+        .then(data => {
+            let postListElement = document.querySelector('#post-list');
+            data.data.forEach(post => {
+                postListElement.innerHTML += createPostItemTemplate(post.id, post.user.name, post.description)
+            });
+
+            hideLoader();
+
+            URL = data.next_page_url;
+            if(!URL) {
+                loadMoreButton.classList.add('hidden');
+            }
+        })
+    }
+
+    loadMore();
+
 </script>
 @endpush
