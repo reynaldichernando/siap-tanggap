@@ -23,7 +23,8 @@ Route::get('/', function () {
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/vaccination', [VaccinationController::class, 'index'])->name('vaccination');
-Route::get('/discussion', [PostController::class, 'index'])->name('discussion');
+Route::get('/discussion', [PostController::class, 'index'])->name('post');
+Route::post('/discussion', [PostController::class, 'store'])->name('post.store');
 Auth::routes([
     'reset' => false
 ]);

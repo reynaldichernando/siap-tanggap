@@ -90,7 +90,7 @@
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
                             href="{{ route('vaccination') }}">Lokasi Vaksinasi</a></li>
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
-                            href="{{ route('discussion') }}">Forum Diskusi</a>
+                            href="{{ route('post') }}">Forum Diskusi</a>
                     </div>
                 </nav>
                 <nav class="flex">
@@ -135,7 +135,7 @@
                 <div class="flex flex-col items-start">
                     <a href="{{ route('home') }}">Beranda</a>
                     <a href="{{ route('vaccination') }}">Lokasi Vaksinasi</a>
-                    <a href="{{ route('discussion') }}">Forum Diskusi</a>
+                    <a href="{{ route('post') }}">Forum Diskusi</a>
                 </div>
                 <div class="flex flex-col items-start">
                     <div class="md:text-xl font-semibold">Contact us:</div>

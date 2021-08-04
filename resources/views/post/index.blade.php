@@ -6,7 +6,8 @@
     @auth
     <div class="flex flex-col md:flex-row w-11/12 md:w-3/5 lg:w-1/2 bg-white p-4 rounded shadow my-8">
         <div class="h-10 w-10 mr-4 bg-blue-300 rounded-full hidden md:block"></div>
-        <form class="flex flex-col w-full" action="">
+        <form class="flex flex-col w-full" method="POST" action="{{ route('post.store') }}">
+            @csrf
             <div class="flex flex-col flex-1">
                 <textarea
                     class="shadow appearance-none border rounded mb-4 text-gray-700 resize-none p-2 focus:outline-none focus:shadow-outline leading-snug"
@@ -42,7 +43,7 @@
                 <div class="h-10 w-10 mr-4 bg-blue-300 rounded-full"></div>
                 <p class="font-semibold">${username}</p>
             </div>
-            <div class="flex flex-col flex-1">${description}</div>
+            <div class="flex flex-col flex-1 leading-snug">${description}</div>
             <a class="mt-4 self-start text-sm text-gray-700" href="/discussion/${id}">View Replies</a>
         </div>
     `;
