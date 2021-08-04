@@ -37,7 +37,9 @@
     </div>
 
     @auth
-    <h3 class="text-2xl mt-8">Post Reply</h3>
+    <div class="flex flex-col md:flex-row w-11/12 md:w-3/5 lg:w-1/2">
+        <h3 class="text-2xl mt-8 ">Post Reply</h3>
+    </div>
     <div class="flex flex-col md:flex-row w-11/12 md:w-3/5 lg:w-1/2 bg-white p-4 rounded shadow my-8">
         <div class="h-10 w-10 mr-4 bg-blue-300 rounded-full hidden md:block"></div>
         <form class="flex flex-col w-full" method="POST" action="{{ route('reply.store', ['post' => $post]) }}">
