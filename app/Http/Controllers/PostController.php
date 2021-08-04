@@ -35,9 +35,17 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+
+        $request->validate([
+            'description' => 'required',
+            'image' => 'file|image',
+        ]);
+
         $post = new Post;
         $post->user_id = $request->user()->id;
         $post->description = $request->description;
+        if ($request->image)
+            $post->image = $request->file('image')->store('images', 'public');
 
         $post->save();
 
