@@ -7,7 +7,7 @@
     </section>
     <section class="flex flex-col items-center justify-center w-full pt-20 pb-40 px-10 bg-purple-100">
         <h3 class="text-xl mb-10 text-center">Cari Fasilitas Kesehatan Penyedia Vaksinasi Covid-19</h3>
-        <form action="#" method="POST" class="flex flex-col items-center w-full mb-16">
+        <form id="hospital-search" action="#" method="POST" class="flex flex-col items-center w-full mb-16">
             <div class="w-full md:w-4/5 lg:w-3/5 xl:w-2/5 flex items-center mb-4 relative">
                 <input type="text" id="search" name="search" class="w-full focus:outline-none form-input p-4 pr-14"
                     placeholder="Klinik/Puskesmas/Kecamatan">
@@ -170,7 +170,7 @@
     let provinceSelectElement = document.querySelector('#province');
     let citySelectElement = document.querySelector('#city');
     let districtSelectElement = document.querySelector('#district');
-    let searchForm = document.querySelector('form');
+    let searchForm = document.querySelector('#hospital-search');
     let hospitalContainerElement = document.querySelector('#hospital-container');
     let hospitalListElement = document.querySelector('#hospital-list');
     let submitButton = document.querySelector('input[type="submit"]');
