@@ -20,4 +20,5 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix' => '/v1'], function() {
     Route::get('/posts', [PostController::class, 'index'])->name('api.posts');
     Route::get('/statistics', [StatisticController::class, 'index'])->name('api.statistics');
+    Route::get('/news', [NewsController::class, 'index'])->name('api.news');
 });

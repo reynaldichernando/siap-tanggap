@@ -257,26 +257,7 @@
     <div class="border-gray-200 flex flex-col overflow-x-auto overflow-y-hidden mx-auto w-5/6 no-scrollbar pb-1 space-y-2"
         id="section-news">
 
-        @foreach($news as $n)
-        <a href="{{$n['url']}}" target="_blank"
-            class="flex flex-col-reverse md:flex-row items-center justify-center h-full bg-gray-800 rounded-xl md:space-x-10 p-2 text-white hover:text-black hover:bg-gray-200 border border-gray-800 transition duration-300 ease-in-out">
-            <div class="md:w-2/3">
-                <p class="w-full md:text-2xl font-semibold" name="news-title">{{$n['title']}}</p>
-                <br>
-                <p class="w-full pb-8 text-sm tracking-wide leading-tight" name="news-desc">{{$n['description']}}</p>
-            </div>
-            <div class="md:w-1/5 mb-2 md:mb-0">
-                @if(is_null($n['urlToImage']))
-                <img class="flex-1 h-full w-full rounded-lg" src="{{URL::asset('/images/default-placeholder.png')}}"
-                    alt="No Image" />
-                @else
-                <img class="flex-1 h-full w-full rounded-lg" src="{{$n['urlToImage']}}" alt="No Image" />
-                @endif
-            </div>
-        </a>
-        @endforeach
     </div>
-
 </section>
 @endsection
 
@@ -293,6 +274,35 @@
         confirmedElement.innerHTML = data.positif;
         recoveredElement.innerHTML = data.sembuh;
         deathElement.innerHTML = data.meninggal;
+    })
+
+    let newsURL = '{{ route('api.news') }}';
+    let newsSectionElement = document.querySelector('#section-news');
+
+    const createNewsTemplate = (url, title, description, imageUrl) => `
+        <a href="${url}" target="_blank"
+            class="flex flex-col-reverse md:flex-row items-center justify-center h-full bg-gray-800 rounded-xl md:space-x-10 p-2 text-white hover:text-black hover:bg-gray-200 border border-gray-800 transition duration-300 ease-in-out">
+            <div class="md:w-2/3">
+                <p class="w-full md:text-2xl font-semibold" name="news-title">${title}</p>
+                <br>
+                <p class="w-full pb-8 text-sm tracking-wide leading-tight" name="news-desc">${description}</p>
+            </div>
+            <div class="md:w-1/5 mb-2 md:mb-0">
+                ${!!imageUrl ? `
+                <img class="flex-1 h-full w-full rounded-lg" src="${imageUrl}" alt="${title}" />
+                ` : `
+                <img class="flex-1 h-full w-full rounded-lg" src="/images/default-placeholder.png" alt="No Image" />
+                `}
+            </div>
+        </a>
+    `;
+
+    fetch(newsURL)
+    .then(response => response.json())
+    .then(data => {
+        data.articles.forEach(article => {
+            newsSectionElement.innerHTML += createNewsTemplate(article.url, article.title, article.description, article.urlToImage);
+        });
     })
 </script>
 @endpush
