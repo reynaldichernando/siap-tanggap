@@ -83,42 +83,58 @@
         <div class="flex justify center flex-col mx-1 md:mx-10">
             <h2 class="font-bold text-sm md:text-3xl">Jumlah Kasus</h2>
             <br>
-            <h3 class="md:text-xl font-semibold">2.26 Juta</h3>
+            <h3 id="confirmed" class="md:text-xl font-semibold">
+                <div class="h-5 w-36 mx-auto bg-gray-300 animate-pulse rounded-full"></div>
+            </h3>
         </div>
-    
+
         <div class="flex justify center flex-col mx-1 md:mx-10">
             <h2 class="font-bold text-sm md:text-3xl">Jumlah Kesembuhan</h2>
             <br>
-            <h3 class="md:text-xl font-semibold">1.9 Juta</h3>
+            <h3 id="recovered" class="md:text-xl font-semibold">
+                <div class="h-5 w-36 mx-auto bg-gray-300 animate-pulse rounded-full"></div>
+            </h3>
         </div>
-    
+
         <div class="flex justify center flex-col mx-1 md:mx-10">
             <h2 class="font-bold text-sm md:text-3xl">Jumlah Kematian</h2>
             <br>
-            <h3 class="md:text-xl font-semibold">60 Ribu</h3>
+            <h3 id="death" class="md:text-xl font-semibold">
+                <div class="h-5 w-36 mx-auto bg-gray-300 animate-pulse rounded-full"></div>
+            </h3>
         </div>
     </div>
 </section>
 
-<section class="flex flex-col-reverse justify-around bg-blue-50 py-4 mb-12 md:flex-row leading-4 leading-relaxed">
+<section class="flex flex-col-reverse justify-around bg-blue-50 py-4 mb-12 md:flex-row leading-leading-relaxed">
     <div class="md:w-3/6 flex flex-col justify-center text-justify py-5 px-8">
         <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Apa itu Covid-19?</h1>
-        <p class="md:text-lg">COVID-19 adalah penyakit yang disebabkan oleh virus severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). COVID-19 dapat menyebabkan gangguan sistem pernapasan, mulai dari gejala yang ringan seperti flu, hingga infeksi paru-paru, seperti pneumonia.</p>
+        <p class="md:text-lg">COVID-19 adalah penyakit yang disebabkan oleh virus severe acute respiratory syndrome
+            coronavirus 2 (SARS-CoV-2). COVID-19 dapat menyebabkan gangguan sistem pernapasan, mulai dari gejala yang
+            ringan seperti flu, hingga infeksi paru-paru, seperti pneumonia.</p>
     </div>
     <div class="w-2/5 mx-auto">
         <img src="{{URL::asset('/images/pablo-573.png')}}" alt="">
-        <div class="text-sm text-center text-gray-300 mt-2">Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a></a></div>
+        <div class="text-sm text-center text-gray-300 mt-2">Illustration by <a
+                href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a
+                href="https://icons8.com/illustrations">Ouch!</a></a></div>
     </div>
 </section>
 
 <section class="flex justify-around flex-col md:flex-row px-8 md:px-28 bg-blue-50 py-4 mb-12 leading-relaxed">
     <div class="w-2/5 mx-auto">
         <img src="{{URL::asset('/images/pablo-578.png')}}" alt="">
-        <div class="text-sm text-center text-gray-300 mt-2">Illustration by <a href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a></div>
+        <div class="text-sm text-center text-gray-300 mt-2">Illustration by <a
+                href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a
+                href="https://icons8.com/illustrations">Ouch!</a></div>
     </div>
     <div class="md:w-3/6 flex flex-col justify-center text-justify py-5">
         <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Gejala Covid-19</h1>
-        <p class="md:text-lg">Gejala awal infeksi COVID-19 bisa menyerupai gejala flu, yaitu <span class="font-semibold">demam, pilek, batuk kering, sakit tenggorokan, dan sakit kepala</span>. Setelah itu, gejala dapat hilang dan sembuh atau malah memberat. Penderita dengan gejala yang berat bisa mengalami demam tinggi, batuk berdahak atau berdarah, sesak napas, dan nyeri dada. Gejala-gejala tersebut di atas muncul ketika tubuh bereaksi melawan virus COVID-19.</p>
+        <p class="md:text-lg">Gejala awal infeksi COVID-19 bisa menyerupai gejala flu, yaitu <span
+                class="font-semibold">demam, pilek, batuk kering, sakit tenggorokan, dan sakit kepala</span>. Setelah
+            itu, gejala dapat hilang dan sembuh atau malah memberat. Penderita dengan gejala yang berat bisa mengalami
+            demam tinggi, batuk berdahak atau berdarah, sesak napas, dan nyeri dada. Gejala-gejala tersebut di atas
+            muncul ketika tubuh bereaksi melawan virus COVID-19.</p>
     </div>
 </section>
 
@@ -209,8 +225,8 @@
     </div>
 </section>
 
-    <section class="flex flex-col justify-around bg-blue-50 py-4 mb-12 md:flex-row leading-relaxed">
-        <div class="w-full  mx-auto px-8">
+<section class="flex flex-col justify-around bg-blue-50 py-4 mb-12 md:flex-row leading-relaxed">
+    <div class="w-full  mx-auto px-8">
         <p class="text-center text-lg md:text-4xl mb-4">Diagnosis Covid-19</p>
         <div class="text-justify text-md md:text-lg">
             <p>Untuk menentukan apakah pasien terinfeksi virus Corona, dokter akan menanyakan gejala yang dialami pasien
@@ -230,41 +246,53 @@
                 <li class="p-2 hover:bg-green-100">CT scan atau Rontgen dada untuk mendeteksi infiltrat atau cairan di
                     paru-paru.</li>
             </ul>
-         </div>
-    </section>
-
-
-    <section class="mb-6">
-        <h1 class="text-center text-2xl md:text-4xl mb-4 font-semibold">
-            Berita Terkini
-        </h1>
-        <div class="border-gray-200 flex flex-col overflow-x-auto overflow-y-hidden mx-auto w-5/6 no-scrollbar pb-1 space-y-2" id="section-news">
-
-            @foreach($news as $n)
-                <a href="{{$n['url']}}" target="_blank" class="flex flex-col-reverse md:flex-row items-center justify-center h-full bg-gray-800 rounded-xl md:space-x-10 p-2 text-white hover:text-black hover:bg-gray-200 border border-gray-800 transition duration-300 ease-in-out">
-                    <div class="md:w-2/3">
-                        <p class="w-full md:text-2xl font-semibold" name="news-title">{{$n['title']}}</p>
-                        <br>
-                        <p class="w-full pb-8 text-sm tracking-wide leading-tight" name="news-desc">{{$n['description']}}</p>
-                    </div>
-                    <div class="md:w-1/5 mb-2 md:mb-0">
-                        @if(is_null($n['urlToImage']))
-                            <img class="flex-1 h-full w-full rounded-lg" src="{{URL::asset('/images/default-placeholder.png')}}" alt="No Image" />
-                        @else
-                            <img class="flex-1 h-full w-full rounded-lg" src="{{$n['urlToImage']}}" alt="No Image" />
-                        @endif
-                    </div>
-                </a>
-            @endforeach 
-
-
-            
         </div>
-        
-    </section>
+</section>
+
+
+<section class="mb-6">
+    <h1 class="text-center text-2xl md:text-4xl mb-4 font-semibold">
+        Berita Terkini
+    </h1>
+    <div class="border-gray-200 flex flex-col overflow-x-auto overflow-y-hidden mx-auto w-5/6 no-scrollbar pb-1 space-y-2"
+        id="section-news">
+
+        @foreach($news as $n)
+        <a href="{{$n['url']}}" target="_blank"
+            class="flex flex-col-reverse md:flex-row items-center justify-center h-full bg-gray-800 rounded-xl md:space-x-10 p-2 text-white hover:text-black hover:bg-gray-200 border border-gray-800 transition duration-300 ease-in-out">
+            <div class="md:w-2/3">
+                <p class="w-full md:text-2xl font-semibold" name="news-title">{{$n['title']}}</p>
+                <br>
+                <p class="w-full pb-8 text-sm tracking-wide leading-tight" name="news-desc">{{$n['description']}}</p>
+            </div>
+            <div class="md:w-1/5 mb-2 md:mb-0">
+                @if(is_null($n['urlToImage']))
+                <img class="flex-1 h-full w-full rounded-lg" src="{{URL::asset('/images/default-placeholder.png')}}"
+                    alt="No Image" />
+                @else
+                <img class="flex-1 h-full w-full rounded-lg" src="{{$n['urlToImage']}}" alt="No Image" />
+                @endif
+            </div>
+        </a>
+        @endforeach
+    </div>
+
+</section>
 @endsection
 
 @push('scripts')
 <script>
+    let statisticURL = '{{ route('api.statistics') }}';
+    let confirmedElement = document.querySelector('#confirmed'); 
+    let recoveredElement = document.querySelector('#recovered'); 
+    let deathElement = document.querySelector('#death'); 
+
+    fetch(statisticURL)
+    .then(response => response.json())
+    .then(data => {
+        confirmedElement.innerHTML = data.positif;
+        recoveredElement.innerHTML = data.sembuh;
+        deathElement.innerHTML = data.meninggal;
+    })
 </script>
 @endpush
