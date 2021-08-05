@@ -74,6 +74,7 @@
                         text-purple-400
                         @break
                     @case('post')
+                    @case('post.show')
                         text-teal-400
                         @break
                     @default
