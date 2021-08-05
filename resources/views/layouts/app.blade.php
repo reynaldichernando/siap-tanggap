@@ -106,19 +106,19 @@
                 <nav class="flex">
                     <div class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
                         @guest
-                        <a class="md:p-4 py-3 px-0 block" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        <a class="md:p-4 py-3 px-0 block hover:opacity-75 duration-200" href="{{ route('login') }}">{{ __('Login') }}</a>
                         @if (Route::has('register'))
                         <a class="md:p-4 py-3 px-0 block border-2 border-transparent lg:border-yellow-300 lg:focus:bg-yellow-300 lg:focus:text-white rounded-lg"
                             href="{{ route('register') }}">{{ __('Register') }}</a>
                         @endif
                         @else
                         <a href="#"
-                            class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">
+                            class="md:p-4 py-3 px-0 hover:opacity-75 duration-200">
                             {{ Auth::user()->name }}
                         </a>
 
                         <a href="{{ route('logout') }}"
-                            class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-300" onclick="event.preventDefault();
+                            class="md:p-4 py-3 px-0 block hover:opacity-75 duration-200" onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
                             {{ csrf_field() }}
