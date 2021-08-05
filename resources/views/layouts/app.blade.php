@@ -108,7 +108,7 @@
                         @guest
                         <a class="md:p-4 py-3 px-0 block hover:opacity-75 duration-200" href="{{ route('login') }}">{{ __('Login') }}</a>
                         @if (Route::has('register'))
-                        <a class="md:p-4 py-3 px-0 block border-2 border-transparent lg:border-yellow-300 lg:focus:bg-yellow-300 lg:focus:text-white rounded-lg"
+                        <a class="md:p-4 py-3 px-0 block border-2 border-transparent lg:border-yellow-300 lg:focus:bg-yellow-300 lg:focus:text-white rounded-full"
                             href="{{ route('register') }}">{{ __('Register') }}</a>
                         @endif
                         @else
