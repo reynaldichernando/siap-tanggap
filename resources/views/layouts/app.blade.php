@@ -69,7 +69,17 @@
         <header
             class="md:px-16 h-16 md:h-24 px-6 bg-white flex flex-wrap items-center py-4 sticky top-0 shadow-sm z-10">
             <div class="flex flex-1 lg:flex-none items-center mr-6 pb-2">
-                <a href="{{ url('/') }}" class="font-bold text-2xl text-blue-400">
+                <a href="{{ url('/') }}" class="font-bold text-2xl @switch(Route::currentRouteName())
+                    @case('vaccination')
+                        text-purple-400
+                        @break
+                    @case('post')
+                    @case('post.show')
+                        text-teal-400
+                        @break
+                    @default
+                    text-blue-400
+                @endswitch">
                     {{ config('app.name', 'Laravel') }}
                 </a>
             </div>
@@ -81,35 +91,34 @@
                 </svg></label>
             <input class="hidden" type="checkbox" id="menu-toggle" />
 
-            <div class="hidden lg:flex lg:flex-1 lg:flex-row lg:items-center lg:justify-between lg:w-auto lg:relative absolute top-16 md:top-24 lg:top-0 w-full left-0 px-4 pb-4 lg:p-0 bg-white shadow-sm lg:shadow-none"
+            <div class="hidden lg:flex lg:flex-1 lg:flex-row lg:items-center lg:justify-between lg:w-auto lg:relative absolute top-16 md:top-24 lg:top-0 w-full left-0 px-4 pb-4 lg:p-0 bg-white shadow-md lg:shadow-none"
                 id="menu">
                 <nav class="flex">
                     <div class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
-                        <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
+                        <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-blue-400 {{ Route::is('home') ? 'text-blue-400' : '' }}"
                             href="{{ route('home') }}">Beranda</a>
-                        <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
+                        <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-purple-400 {{ Route::is('vaccination') ? 'text-purple-400' : '' }}"
                             href="{{ route('vaccination') }}">Lokasi Vaksinasi</a></li>
-                        <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400"
+                        <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-teal-400 {{ Route::is('post') ? 'text-teal-400' : '' }}"
                             href="{{ route('post') }}">Forum Diskusi</a>
                     </div>
                 </nav>
                 <nav class="flex">
                     <div class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
                         @guest
-                        <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-yellow-300"
-                            href="{{ route('login') }}">{{ __('Login') }}</a>
+                        <a class="md:p-4 py-3 px-0 block hover:opacity-75 duration-200" href="{{ route('login') }}">{{ __('Login') }}</a>
                         @if (Route::has('register'))
-                        <a class="md:p-4 py-3 px-0 block border-2 border-transparent hover:border-yellow-300 rounded-lg"
+                        <a class="md:p-4 py-3 px-0 block border-2 border-transparent lg:border-yellow-300 lg:focus:bg-yellow-300 lg:focus:text-white rounded-full"
                             href="{{ route('register') }}">{{ __('Register') }}</a>
                         @endif
                         @else
-                        <a href="#" class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">
+                        <a href="#"
+                            class="md:p-4 py-3 px-0 hover:opacity-75 duration-200">
                             {{ Auth::user()->name }}
                         </a>
 
                         <a href="{{ route('logout') }}"
-                            class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-300"
-                            onclick="event.preventDefault();
+                            class="md:p-4 py-3 px-0 block hover:opacity-75 duration-200" onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
                             {{ csrf_field() }}

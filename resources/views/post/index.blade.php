@@ -5,7 +5,7 @@
     <h1 class="text-4xl">Posts</h1>
     @auth
     <div class="flex flex-col md:flex-row w-11/12 md:w-3/5 lg:w-1/2 bg-white p-4 rounded shadow my-8">
-        <div class="h-10 w-10 mr-4 bg-blue-300 rounded-full hidden md:block"></div>
+        <div class="h-10 w-10 mr-4 bg-teal-300 rounded-full hidden md:block"></div>
         <form class="flex flex-col w-full" method="POST" action="{{ route('post.store') }}"
             enctype="multipart/form-data">
             @csrf
@@ -16,7 +16,7 @@
                     placeholder="What are you thinking?" required></textarea>
                 <div class="flex items-center">
                     <label
-                        class="font-bold text-sm text-blue-500 hover:text-blue-800 cursor-pointer"
+                        class="font-bold text-sm text-teal-500 hover:text-teal-800 cursor-pointer"
                         for="image" id="lblImage">+ Add Image</label>
                     <button id="clear-image" class="hidden ml-4 focus:outline-none" onclick="event.preventDefault(); document.querySelector('#image').value = ''; document.querySelector('#lblImage').innerHTML = '+ Add Image'; this.classList.add('hidden')">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
@@ -29,7 +29,7 @@
             </div>
             <div class="text-right">
                 <button
-                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                     type="submit">Send</button>
             </div>
         </form>
@@ -54,7 +54,7 @@
     </div>
 
     <button id="load-more"
-        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-full focus:outline-none"
+        class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-4 px-4 rounded-full focus:outline-none"
         onclick="loadMore()">Load More</button>
 </main>
 @endsection
@@ -68,7 +68,7 @@
     const createPostItemTemplate = (id, username, description, image, time) => `
     <div class="flex flex-col w-11/12 md:w-3/5 lg:w-1/2 mb-4 bg-white py-4 rounded shadow">
         <div class="flex items-center mb-4 px-4">
-            <div class="h-10 w-10 mr-4 bg-blue-300 rounded-full"></div>
+            <div class="h-10 w-10 mr-4 bg-teal-300 rounded-full"></div>
             <div>
                 <div class="font-semibold">${username}</div>
                 <div class="text-xs mt-2">${time}</div>
@@ -78,7 +78,7 @@
         ${!!image ? 
             `<a href="/storage/${image}" target="_blank" rel="noopener noreferrer"><img class="mt-4 w-full" src="/storage/${image}" alt="${username}'s post"></a>` : 
             ''}
-        <a class="mt-4 self-start text-sm text-gray-700 px-4" href="/discussion/${id}">View Replies</a>
+        <a class="mt-4 self-start text-sm text-gray-700 mx-4" href="/discussion/${id}">View Replies</a>
     </div>
     `;
 

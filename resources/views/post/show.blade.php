@@ -1,10 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-<main class="flex flex-col items-center py-8">
+<main class="flex flex-col items-center pt-4 pb-8">
+    <div class="flex w-11/12 md:w-3/5 lg:w-1/2 m-2">
+        <a class="flex flex-row items-center" href="{{ route('post') }}"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+          </svg><span class="text-md ml-1">Back to Forum</span></a>
+    </div>
     <div class="flex flex-col w-11/12 md:w-3/5 lg:w-1/2 m-4 bg-white py-4 rounded shadow">
         <div class="flex items-center mb-4 px-4">
-            <div class="h-10 w-10 mr-4 bg-blue-300 rounded-full"></div>
+            <div class="h-10 w-10 mr-4 bg-teal-300 rounded-full"></div>
             <div>
                 <div class="font-semibold">{{ $post->user->name }}</div>
                 <div class="text-xs mt-2">{{ $post->human_readable_time }}</div>
@@ -22,7 +27,7 @@
         <div class="flex flex-col w-11/12 md:w-3/5 lg:w-1/2 m-2">
             <div class="bg-white py-4 ml-14 rounded shadow">
                 <div class="flex items-center mb-4 px-4">
-                    <div class="h-10 w-10 mr-4 bg-blue-300 rounded-full"></div>
+                    <div class="h-10 w-10 mr-4 bg-teal-300 rounded-full"></div>
                     <div>
                         <div class="font-semibold">{{ $reply->user->name }}</div>
                         <div class="text-xs mt-2">{{ $reply->human_readable_time }}</div>
@@ -41,7 +46,7 @@
         <h3 class="text-2xl mt-8 ">Post Reply</h3>
     </div>
     <div class="flex flex-col md:flex-row w-11/12 md:w-3/5 lg:w-1/2 bg-white p-4 rounded shadow my-8">
-        <div class="h-10 w-10 mr-4 bg-blue-300 rounded-full hidden md:block"></div>
+        <div class="h-10 w-10 mr-4 bg-teal-300 rounded-full hidden md:block"></div>
         <form class="flex flex-col w-full" method="POST" action="{{ route('reply.store', ['post' => $post]) }}">
             @csrf
             <div class="flex flex-col flex-1">
@@ -52,7 +57,7 @@
             </div>
             <div class="text-right">
                 <button
-                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                     type="submit">Send</button>
             </div>
         </form>
