@@ -281,6 +281,54 @@
             id="section-news">
 
         </div>
+        <div class="flex mx-auto w-5/6 flex-wrap items-center justify-center"
+            id="news-skeleton">
+            <div class="flex flex-col bg-white p-3 max-w-xs m-2 h-72 w-full">
+                <div class="animate-pulse">
+                    <div class="mb-2 w-full h-40 bg-gray-300 rounded"></div>
+                    <div>
+                        <div class="w-full mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="w-full mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="w-10/12 mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="bg-gray-300 mt-4 w-1/3 h-3 rounded"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col bg-white p-3 max-w-xs m-2 h-72 w-full">
+                <div class="animate-pulse">
+                    <div class="mb-2 w-full h-40 bg-gray-300 rounded"></div>
+                    <div>
+                        <div class="w-full mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="w-full mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="w-10/12 mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="bg-gray-300 mt-4 w-1/3 h-3 rounded"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col bg-white p-3 max-w-xs m-2 h-72 w-full">
+                <div class="animate-pulse">
+                    <div class="mb-2 w-full h-40 bg-gray-300 rounded"></div>
+                    <div>
+                        <div class="w-full mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="w-full mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="w-10/12 mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="bg-gray-300 mt-4 w-1/3 h-3 rounded"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col bg-white p-3 max-w-xs m-2 h-72 w-full">
+                <div class="animate-pulse">
+                    <div class="mb-2 w-full h-40 bg-gray-300 rounded"></div>
+                    <div>
+                        <div class="w-full mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="w-full mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="w-10/12 mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="bg-gray-300 mt-4 w-1/3 h-3 rounded"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 </main>
 @endsection
@@ -306,10 +354,11 @@
 
     let newsURL = '{{ route('api.news') }}';
     let newsSectionElement = document.querySelector('#section-news');
+    let newsSkeletonElement = document.querySelector('#news-skeleton');
 
     const createNewsTemplate = (url, title, source, imageUrl) => `
         <a href="${url}" target="_blank"
-            class="flex flex-col bg-white p-3 max-w-xs m-2 h-72">
+            class="flex flex-col bg-white p-3 max-w-xs m-2 md:h-72">
             <div class="mb-2 w-full h-40">
                 ${!!imageUrl ? `
                 <img class="object-cover object-center w-full h-40 rounded" src="${imageUrl}" alt="${title}" onerror="this.src = '/images/default-placeholder.png';" />
@@ -330,6 +379,8 @@
         data.articles.forEach(article => {
             newsSectionElement.innerHTML += createNewsTemplate(article.url, article.title, article.source.name, article.urlToImage);
         });
+        newsSkeletonElement.classList.remove('flex');
+        newsSkeletonElement.classList.add('hidden');
     })
 
     let dateElement = document.querySelector('#date');
