@@ -384,7 +384,7 @@
     })
 
     let dateElement = document.querySelector('#date');
-    let month = ['January', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'Desember'];
+    let month = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'Desember'];
 
     let today = new Date();
     let dd = today.getDate();
