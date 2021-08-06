@@ -376,8 +376,8 @@
     fetch(newsURL)
     .then(response => response.json())
     .then(data => {
-        data.articles.forEach(article => {
-            newsSectionElement.innerHTML += createNewsTemplate(article.url, article.title, article.source.name, article.urlToImage);
+        data.items.forEach(article => {
+            newsSectionElement.innerHTML += createNewsTemplate(`https://today.line.me/id/v2/article/${article.url.hash}`, article.title, article.publisher, `https://obs.line-scdn.net/${article.thumbnail.hash}/w1200`);
         });
         newsSkeletonElement.classList.remove('flex');
         newsSkeletonElement.classList.add('hidden');
