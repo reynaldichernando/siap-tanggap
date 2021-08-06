@@ -30,6 +30,11 @@
         /*.bg-gray-100 */
         color: #6574cd;
         /*.text-indigo*/
+        transition-duration: 100ms;
+    }
+
+    .tab input[type=checkbox]+label {
+        transition-duration: 50ms;
     }
 
     /* Icon */
@@ -147,10 +152,10 @@
         </div>
     </section>
 
-    <section class="flex flex-col bg-blue-50 py-4 mb-12 md:flex-row">
-        <div class="w-full mx-auto px-8">
-            <h3 class="text-center text-xl md:text-4xl mb-4 font-semibold">Varian Covid-19</h3>
-            <div class="shadow-md bg-white">
+    <section class="flex flex-col bg-blue-100 py-16 w-full">
+        <div class="w-full mx-auto p-8">
+            <h3 class="text-center text-xl md:text-4xl mb-8 font-semibold">Varian Covid-19</h3>
+            <div class="shadow-md bg-white lg:w-1/2 mx-auto">
                 <div class="tab w-full overflow-hidden border-t">
                     <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
                     <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">Varian Alfa</label>
