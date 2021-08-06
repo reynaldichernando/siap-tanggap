@@ -242,10 +242,10 @@
         </div>
     </section>
 
-    <section class="flex flex-col justify-around bg-blue-50 py-4 mb-12 md:flex-row leading-relaxed">
-        <div class="w-full  mx-auto px-8">
-            <p class="text-center text-lg md:text-4xl mb-4">Diagnosis Covid-19</p>
-            <div class="text-justify text-md md:text-lg">
+    <section class="flex justify-center items-center flex-col md:flex-row px-8 md:px-28 py-16">
+        <div class="md:w-4/6 flex flex-col justify-center text-justify py-5">
+            <h1 class="text-2xl md:text-4xl font-semibold mb-5 md:mb-8 text-left">Diagnosis Covid-19</h1>
+            <div class="leading-snug">
                 <p>Untuk menentukan apakah pasien terinfeksi virus Corona, dokter akan menanyakan gejala yang dialami
                     pasien
                     dan apakah pasien baru saja bepergian atau tinggal di daerah yang memiliki kasus infeksi virus
@@ -257,19 +257,20 @@
                 <p>Guna memastikan diagnosis COVID-19, dokter akan melakukan beberapa pemeriksaan berikut:</p>
                 <br>
                 <ul class="list-disc pl-5">
-                    <li class="p-2 hover:bg-green-100">Rapid test untuk mendeteksi antibodi (IgM dan IgG) yang
+                    <li class="p-2">Rapid test untuk mendeteksi antibodi (IgM dan IgG) yang
                         diproduksi
                         oleh tubuh untuk melawan virus Corona. Namun, rapid test antigen sekarang dianggap lebih akurat
                         dibandingkan rapid antibodi. Meski demikian, pemeriksaan rapid test atau swab antigen tidak
                         dianjurkan untuk dilakukan mandiri di rumah dan harus oleh petugas medis</li>
-                    <li class="p-2 hover:bg-green-100">Swab test atau tes PCR (polymerase chain reaction) untuk
+                    <li class="p-2">Swab test atau tes PCR (polymerase chain reaction) untuk
                         mendeteksi
                         virus Corona di dalam dahak.</li>
-                    <li class="p-2 hover:bg-green-100">CT scan atau Rontgen dada untuk mendeteksi infiltrat atau cairan
+                    <li class="p-2">CT scan atau Rontgen dada untuk mendeteksi infiltrat atau cairan
                         di
                         paru-paru.</li>
                 </ul>
             </div>
+        </div>
     </section>
 
     <section class="mb-6">
