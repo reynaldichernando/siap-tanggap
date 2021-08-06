@@ -38,6 +38,6 @@ class ProfileController extends Controller
         // dd($user);
         $user->save();
 
-        return redirect()->route('profile');
+        return redirect()->back()->with('message', 'Data Berhasil Disimpan!');
     }
 }
