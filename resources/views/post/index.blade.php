@@ -101,7 +101,7 @@
         ${!!image ? 
             `<a href="/storage/${image}" target="_blank" rel="noopener noreferrer"><img class="mt-4 w-full" src="/storage/${image}" alt="${username}'s post"></a>` : 
             ''}
-        <a class="mt-4 self-start text-sm text-gray-700 mx-4" href="/discussion/${id}">View Replies</a>
+        <a class="mt-4 self-start text-sm text-gray-700 mx-4" href="/discussion/${id}">Lihat Komentar</a>
     </div>
     `;
 

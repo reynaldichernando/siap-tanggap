@@ -5,7 +5,7 @@
     <div class="flex w-11/12 md:w-3/5 lg:w-1/2 m-2">
         <a class="flex flex-row items-center" href="{{ route('post') }}"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
-          </svg><span class="text-md ml-1">Back to Forum</span></a>
+          </svg><span class="text-md ml-1">Kembali ke Forum</span></a>
     </div>
     <div class="flex flex-col w-11/12 md:w-3/5 lg:w-1/2 m-4 bg-white py-4 rounded shadow">
         <div class="flex items-center mb-4 px-4">
@@ -51,7 +51,7 @@
             </div>
         </div>
         @empty
-        <p>No replies yet.</p>
+        <p>Belum ada komentar.</p>
         @endforelse
     </div>
 
