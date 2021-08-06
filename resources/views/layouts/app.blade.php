@@ -62,6 +62,7 @@
             }
         }
     </style>
+    @stack('custom-style')
 </head>
 
 <body class="bg-gray-100 antialiased leading-none font-sans">
@@ -78,7 +79,7 @@
                         text-teal-400
                         @break
                     @default
-                    text-blue-400
+                    text-blue-500
                 @endswitch">
                     {{ config('app.name', 'Laravel') }}
                 </a>

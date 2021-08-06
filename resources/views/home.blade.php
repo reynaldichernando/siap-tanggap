@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('custom-style')
+@push('custom-style')
 <style>
     /* Tab content - closed */
     .tab-content {
@@ -30,6 +30,11 @@
         /*.bg-gray-100 */
         color: #6574cd;
         /*.text-indigo*/
+        transition-duration: 100ms;
+    }
+
+    .tab input[type=checkbox]+label {
+        transition-duration: 50ms;
     }
 
     /* Icon */
@@ -75,7 +80,7 @@
         /*.text-grey-lightest*/
     }
 </style>
-@endsection
+@endpush
 
 @section('content')
 <main class="flex flex-col items-center">
@@ -111,49 +116,50 @@
         </div>
     </section>
 
-    <section class="flex flex-col-reverse justify-around bg-blue-50 py-4 mb-12 md:flex-row leading-leading-relaxed">
+    <section class="flex flex-col-reverse justify-around py-16 md:flex-row items-center bg-blue-100">
         <div class="md:w-3/6 flex flex-col justify-center text-justify py-5 px-8">
-            <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Apa itu Covid-19?</h1>
-            <p class="md:text-lg">COVID-19 adalah penyakit yang disebabkan oleh virus severe acute respiratory syndrome
-                coronavirus 2 (SARS-CoV-2). COVID-19 dapat menyebabkan gangguan sistem pernapasan, mulai dari gejala
-                yang
-                ringan seperti flu, hingga infeksi paru-paru, seperti pneumonia.</p>
+            <h1 class="text-2xl md:text-4xl font-semibold mb-5 md:mb-8 text-left">Apa itu Covid-19?</h1>
+            <div class="leading-snug">
+                <p>COVID-19 adalah penyakit yang disebabkan oleh virus severe acute respiratory syndrome
+                    coronavirus 2 (SARS-CoV-2). COVID-19 dapat menyebabkan gangguan sistem pernapasan, mulai dari gejala
+                    yang
+                    ringan seperti flu, hingga infeksi paru-paru, seperti pneumonia.</p>
+            </div>
         </div>
-        <div class="w-2/5 mx-auto">
-            <img src="{{URL::asset('/images/pablo-573.png')}}" alt="">
-            <div class="text-sm text-center text-gray-300 mt-2">Illustration by <a
-                    href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a
-                    href="https://icons8.com/illustrations">Ouch!</a></a></div>
+        <div class="md:w-1/3 w-3/5">
+            <div class="">
+                <img src="{{URL::asset('/images/undraw_social_distancing_2g0u.svg')}}" alt=""
+                    class="w-full h-full">
+            </div>
         </div>
     </section>
 
-    <section class="flex justify-around flex-col md:flex-row px-8 md:px-28 bg-blue-50 py-4 mb-12 leading-relaxed">
-        <div class="w-2/5 mx-auto">
-            <img src="{{URL::asset('/images/pablo-578.png')}}" alt="">
-            <div class="text-sm text-center text-gray-300 mt-2">Illustration by <a
-                    href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a
-                    href="https://icons8.com/illustrations">Ouch!</a></div>
+    <section class="flex justify-around items-center flex-col md:flex-row px-8 md:px-28 py-16">
+        <div class="md:w-2/5 w-3/5">
+            <img src="{{URL::asset('/images/undraw_sleep_analysis_o5f9.svg')}}" alt="" class="w-full h-full">
         </div>
         <div class="md:w-3/6 flex flex-col justify-center text-justify py-5">
-            <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Gejala Covid-19</h1>
-            <p class="md:text-lg">Gejala awal infeksi COVID-19 bisa menyerupai gejala flu, yaitu <span
+            <h1 class="text-2xl md:text-4xl font-semibold mb-5 md:mb-8 text-left">Gejala Covid-19</h1>
+            <div class="leading-snug">
+                Gejala awal infeksi COVID-19 bisa menyerupai gejala flu, yaitu <span
                     class="font-semibold">demam, pilek, batuk kering, sakit tenggorokan, dan sakit kepala</span>.
                 Setelah
                 itu, gejala dapat hilang dan sembuh atau malah memberat. Penderita dengan gejala yang berat bisa
                 mengalami
                 demam tinggi, batuk berdahak atau berdarah, sesak napas, dan nyeri dada. Gejala-gejala tersebut di atas
-                muncul ketika tubuh bereaksi melawan virus COVID-19.</p>
+                muncul ketika tubuh bereaksi melawan virus COVID-19.
+            </div>
         </div>
     </section>
 
-    <section class="flex flex-col justify-around bg-blue-50 py-4 mb-12 md:flex-row">
-        <div class="w-full mx-auto px-8">
-            <p class="text-center text-lg md:text-4xl mb-4">Varian Covid-19</p>
-            <div class="shadow-md">
+    <section class="flex flex-col bg-blue-100 py-16 w-full">
+        <div class="w-full mx-auto p-8">
+            <h3 class="text-center text-xl md:text-4xl mb-8 font-semibold">Varian Covid-19</h3>
+            <div class="shadow-md bg-white lg:w-1/2 mx-auto">
                 <div class="tab w-full overflow-hidden border-t">
                     <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
                     <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">Varian Alfa</label>
-                    <div class="tab-content overflow-hidde bg-gray-100 leading-normal pl-8">
+                    <div class="tab-content overflow-hidden bg-gray-100 leading-normal pl-8">
                         <ul class="list-disc py-4">
                             <li><strong>Kode varian:</strong> B. 1.1.7</li>
                             <li><strong>Kasus pertama kali ditemukan:</strong> Inggris, September 2020</li>
@@ -236,10 +242,10 @@
         </div>
     </section>
 
-    <section class="flex flex-col justify-around bg-blue-50 py-4 mb-12 md:flex-row leading-relaxed">
-        <div class="w-full  mx-auto px-8">
-            <p class="text-center text-lg md:text-4xl mb-4">Diagnosis Covid-19</p>
-            <div class="text-justify text-md md:text-lg">
+    <section class="flex justify-center items-center flex-col md:flex-row px-8 md:px-28 py-16">
+        <div class="md:w-4/6 flex flex-col justify-center text-justify py-5">
+            <h1 class="text-2xl md:text-4xl font-semibold mb-5 md:mb-8 text-left">Diagnosis Covid-19</h1>
+            <div class="leading-snug">
                 <p>Untuk menentukan apakah pasien terinfeksi virus Corona, dokter akan menanyakan gejala yang dialami
                     pasien
                     dan apakah pasien baru saja bepergian atau tinggal di daerah yang memiliki kasus infeksi virus
@@ -251,27 +257,76 @@
                 <p>Guna memastikan diagnosis COVID-19, dokter akan melakukan beberapa pemeriksaan berikut:</p>
                 <br>
                 <ul class="list-disc pl-5">
-                    <li class="p-2 hover:bg-green-100">Rapid test untuk mendeteksi antibodi (IgM dan IgG) yang
+                    <li class="p-2">Rapid test untuk mendeteksi antibodi (IgM dan IgG) yang
                         diproduksi
                         oleh tubuh untuk melawan virus Corona. Namun, rapid test antigen sekarang dianggap lebih akurat
                         dibandingkan rapid antibodi. Meski demikian, pemeriksaan rapid test atau swab antigen tidak
                         dianjurkan untuk dilakukan mandiri di rumah dan harus oleh petugas medis</li>
-                    <li class="p-2 hover:bg-green-100">Swab test atau tes PCR (polymerase chain reaction) untuk
+                    <li class="p-2">Swab test atau tes PCR (polymerase chain reaction) untuk
                         mendeteksi
                         virus Corona di dalam dahak.</li>
-                    <li class="p-2 hover:bg-green-100">CT scan atau Rontgen dada untuk mendeteksi infiltrat atau cairan
+                    <li class="p-2">CT scan atau Rontgen dada untuk mendeteksi infiltrat atau cairan
                         di
                         paru-paru.</li>
                 </ul>
             </div>
+        </div>
     </section>
 
-    <section class="mb-6">
+    <section class="w-full bg-blue-100 py-16">
         <h1 class="text-center text-2xl md:text-4xl mb-4 font-semibold">
             Berita Terkini
         </h1>
-        <div class="border-gray-200 flex flex-col overflow-x-auto overflow-y-hidden mx-auto w-5/6 no-scrollbar pb-1 space-y-2"
+        <div class="flex mx-auto w-5/6 flex-wrap items-center justify-center"
             id="section-news">
+
+        </div>
+        <div class="flex mx-auto w-5/6 flex-wrap items-center justify-center"
+            id="news-skeleton">
+            <div class="flex flex-col bg-white p-3 max-w-xs m-2 h-72 w-full">
+                <div class="animate-pulse">
+                    <div class="mb-2 w-full h-40 bg-gray-300 rounded"></div>
+                    <div>
+                        <div class="w-full mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="w-full mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="w-10/12 mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="bg-gray-300 mt-4 w-1/3 h-3 rounded"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col bg-white p-3 max-w-xs m-2 h-72 w-full">
+                <div class="animate-pulse">
+                    <div class="mb-2 w-full h-40 bg-gray-300 rounded"></div>
+                    <div>
+                        <div class="w-full mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="w-full mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="w-10/12 mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="bg-gray-300 mt-4 w-1/3 h-3 rounded"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col bg-white p-3 max-w-xs m-2 h-72 w-full">
+                <div class="animate-pulse">
+                    <div class="mb-2 w-full h-40 bg-gray-300 rounded"></div>
+                    <div>
+                        <div class="w-full mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="w-full mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="w-10/12 mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="bg-gray-300 mt-4 w-1/3 h-3 rounded"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col bg-white p-3 max-w-xs m-2 h-72 w-full">
+                <div class="animate-pulse">
+                    <div class="mb-2 w-full h-40 bg-gray-300 rounded"></div>
+                    <div>
+                        <div class="w-full mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="w-full mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="w-10/12 mb-2 bg-gray-300 h-4 rounded"></div>
+                        <div class="bg-gray-300 mt-4 w-1/3 h-3 rounded"></div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -280,6 +335,10 @@
 
 @push('scripts')
 <script>
+    const numberWithCommas = (x) => {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
     let statisticURL = '{{ route('api.statistics') }}';
     let confirmedElement = document.querySelector('#confirmed'); 
     let recoveredElement = document.querySelector('#recovered'); 
@@ -288,28 +347,28 @@
     fetch(statisticURL)
     .then(response => response.json())
     .then(data => {
-        confirmedElement.innerHTML = data.positif;
-        recoveredElement.innerHTML = data.sembuh;
-        deathElement.innerHTML = data.meninggal;
+        confirmedElement.innerHTML = numberWithCommas(data.numbers.infected);
+        recoveredElement.innerHTML = numberWithCommas(data.numbers.recovered);
+        deathElement.innerHTML = numberWithCommas(data.numbers.fatal);
     })
 
     let newsURL = '{{ route('api.news') }}';
     let newsSectionElement = document.querySelector('#section-news');
+    let newsSkeletonElement = document.querySelector('#news-skeleton');
 
-    const createNewsTemplate = (url, title, description, imageUrl) => `
+    const createNewsTemplate = (url, title, source, imageUrl) => `
         <a href="${url}" target="_blank"
-            class="flex flex-col-reverse md:flex-row items-center justify-center h-full bg-gray-800 rounded-xl md:space-x-10 p-2 text-white hover:text-black hover:bg-gray-200 border border-gray-800 transition duration-300 ease-in-out">
-            <div class="md:w-2/3">
-                <p class="w-full md:text-2xl font-semibold" name="news-title">${title}</p>
-                <br>
-                <p class="w-full pb-8 text-sm tracking-wide leading-tight" name="news-desc">${description}</p>
-            </div>
-            <div class="md:w-1/5 mb-2 md:mb-0">
+            class="flex flex-col bg-white p-3 max-w-xs m-2 md:h-72">
+            <div class="mb-2 w-full h-40">
                 ${!!imageUrl ? `
-                <img class="flex-1 h-full w-full rounded-lg" src="${imageUrl}" alt="${title}" />
+                <img class="object-cover object-center w-full h-40 rounded" src="${imageUrl}" alt="${title}" onerror="this.src = '/images/default-placeholder.png';" />
                 ` : `
-                <img class="flex-1 h-full w-full rounded-lg" src="/images/default-placeholder.png" alt="No Image" />
+                <img class="object-cover object-center w-full h-40 rounded" src="/images/default-placeholder.png" alt="No Image" />
                 `}
+            </div>
+            <div>
+                <p class="w-full font-semibold mb-2 leading-snug" name="news-title">${title}</p>
+                <small class="text-xs text-gray-500">${source}</small>
             </div>
         </a>
     `;
@@ -317,13 +376,15 @@
     fetch(newsURL)
     .then(response => response.json())
     .then(data => {
-        data.articles.forEach(article => {
-            newsSectionElement.innerHTML += createNewsTemplate(article.url, article.title, article.description, article.urlToImage);
+        data.items.forEach(article => {
+            newsSectionElement.innerHTML += createNewsTemplate(`https://today.line.me/id/v2/article/${article.url.hash}`, article.title, article.publisher, `https://obs.line-scdn.net/${article.thumbnail.hash}/w1200`);
         });
+        newsSkeletonElement.classList.remove('flex');
+        newsSkeletonElement.classList.add('hidden');
     })
 
     let dateElement = document.querySelector('#date');
-    let month = ['January', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'Desember'];
+    let month = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'Desember'];
 
     let today = new Date();
     let dd = today.getDate();

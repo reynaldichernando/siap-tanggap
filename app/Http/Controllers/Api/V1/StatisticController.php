@@ -10,7 +10,7 @@ class StatisticController extends Controller
 {
     public function index()
     {
-        $response = Http::get('https://api.kawalcorona.com/indonesia')->json(0);
+        $response = Http::retry(3)->timeout(3)->get('https://dekontaminasi.com/api/id/covid19/stats')->json();
         return $response;
     }
 }
