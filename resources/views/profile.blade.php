@@ -45,7 +45,7 @@
             <input type='text' disabled value="{{ Auth::user()->email }}" class="w-full mt-2 mb-6 px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:border-green-500" />
 
             
-            <button class="invisible md:float-right bg-blue-500 py-2 px-4 border-b-4 border-blue-800 rounded text-white hover:border-blue-lighter hover:bg-blue-400 focus:outline-none"
+            <button class="invisible md:float-right w-full md:w-auto bg-blue-500 py-2 px-4 border-b-4 border-blue-800 rounded text-white hover:border-blue-lighter hover:bg-blue-400 focus:outline-none"
                 id="btn-save" type=submit>
                     Simpan
             </button>
