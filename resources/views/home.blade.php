@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('custom-style')
+@push('custom-style')
 <style>
     /* Tab content - closed */
     .tab-content {
@@ -75,7 +75,7 @@
         /*.text-grey-lightest*/
     }
 </style>
-@endsection
+@endpush
 
 @section('content')
 <main class="flex flex-col items-center">
@@ -147,14 +147,14 @@
         </div>
     </section>
 
-    <section class="flex flex-col justify-around bg-blue-50 py-4 mb-12 md:flex-row">
+    <section class="flex flex-col bg-blue-50 py-4 mb-12 md:flex-row">
         <div class="w-full mx-auto px-8">
-            <p class="text-center text-lg md:text-4xl mb-4">Varian Covid-19</p>
-            <div class="shadow-md">
+            <h3 class="text-center text-xl md:text-4xl mb-4 font-semibold">Varian Covid-19</h3>
+            <div class="shadow-md bg-white">
                 <div class="tab w-full overflow-hidden border-t">
                     <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
                     <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">Varian Alfa</label>
-                    <div class="tab-content overflow-hidde bg-gray-100 leading-normal pl-8">
+                    <div class="tab-content overflow-hidden bg-gray-100 leading-normal pl-8">
                         <ul class="list-disc py-4">
                             <li><strong>Kode varian:</strong> B. 1.1.7</li>
                             <li><strong>Kasus pertama kali ditemukan:</strong> Inggris, September 2020</li>

@@ -62,6 +62,7 @@
             }
         }
     </style>
+    @stack('custom-style')
 </head>
 
 <body class="bg-gray-100 antialiased leading-none font-sans">
