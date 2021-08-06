@@ -11,7 +11,7 @@ class NewsController extends Controller
 {
     public function index() {
         $API_KEY = '4814ef7797d2473f96671de33e8bec1a';
-        $response = Http::get('https://newsapi.org/v2/top-headlines?country=id&category=health&apiKey='.$API_KEY)->object();
+        $response = Http::retry(3)->timeout(6)->get('https://newsapi.org/v2/top-headlines?country=id&category=health&apiKey='.$API_KEY)->object();
         
         foreach ($response->articles as $article) {
             $article->human_readable_time = Carbon::parse($article->publishedAt)->diffForHumans();

@@ -273,11 +273,11 @@
         </div>
     </section>
 
-    <section class="mb-6">
+    <section class="w-full bg-blue-100 py-16">
         <h1 class="text-center text-2xl md:text-4xl mb-4 font-semibold">
             Berita Terkini
         </h1>
-        <div class="border-gray-200 flex flex-col overflow-x-auto overflow-y-hidden mx-auto w-5/6 no-scrollbar pb-1 space-y-2"
+        <div class="flex mx-auto w-5/6 flex-wrap items-center justify-center"
             id="section-news">
 
         </div>
@@ -303,20 +303,19 @@
     let newsURL = '{{ route('api.news') }}';
     let newsSectionElement = document.querySelector('#section-news');
 
-    const createNewsTemplate = (url, title, description, imageUrl) => `
+    const createNewsTemplate = (url, title, source, imageUrl) => `
         <a href="${url}" target="_blank"
-            class="flex flex-col-reverse md:flex-row items-center justify-center h-full bg-gray-800 rounded-xl md:space-x-10 p-2 text-white hover:text-black hover:bg-gray-200 border border-gray-800 transition duration-300 ease-in-out">
-            <div class="md:w-2/3">
-                <p class="w-full md:text-2xl font-semibold" name="news-title">${title}</p>
-                <br>
-                <p class="w-full pb-8 text-sm tracking-wide leading-tight" name="news-desc">${description}</p>
-            </div>
-            <div class="md:w-1/5 mb-2 md:mb-0">
+            class="flex flex-col bg-white p-3 max-w-xs m-2 h-72">
+            <div class="mb-2 w-full h-40">
                 ${!!imageUrl ? `
-                <img class="flex-1 h-full w-full rounded-lg" src="${imageUrl}" alt="${title}" />
+                <img class="object-cover object-center w-full h-40 rounded" src="${imageUrl}" alt="${title}" onerror="this.src = '/images/default-placeholder.png';" />
                 ` : `
-                <img class="flex-1 h-full w-full rounded-lg" src="/images/default-placeholder.png" alt="No Image" />
+                <img class="object-cover object-center w-full h-40 rounded" src="/images/default-placeholder.png" alt="No Image" />
                 `}
+            </div>
+            <div>
+                <p class="w-full font-semibold mb-2 leading-snug" name="news-title">${title}</p>
+                <small class="text-xs text-gray-500">${source}</small>
             </div>
         </a>
     `;
@@ -325,7 +324,7 @@
     .then(response => response.json())
     .then(data => {
         data.articles.forEach(article => {
-            newsSectionElement.innerHTML += createNewsTemplate(article.url, article.title, article.description, article.urlToImage);
+            newsSectionElement.innerHTML += createNewsTemplate(article.url, article.title, article.source.name, article.urlToImage);
         });
     })
 
