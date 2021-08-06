@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ReplyController;
 use App\Http\Controllers\VaccinationController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -31,6 +32,10 @@ Route::post('/discussion', [PostController::class, 'store'])->name('post.store')
 Route::get('/discussion/{post}', [PostController::class, 'show'])->name('post.show');
 
 Route::post('/discussion/{post}/replies', [ReplyController::class, 'store'])->name('reply.store');
+
+Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+Route::post('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+
 Auth::routes([
     'reset' => false
 ]);
