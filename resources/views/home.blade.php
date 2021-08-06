@@ -111,38 +111,39 @@
         </div>
     </section>
 
-    <section class="flex flex-col-reverse justify-around bg-blue-50 py-4 mb-12 md:flex-row leading-leading-relaxed">
+    <section class="flex flex-col-reverse justify-around py-16 md:flex-row items-center bg-blue-100">
         <div class="md:w-3/6 flex flex-col justify-center text-justify py-5 px-8">
-            <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Apa itu Covid-19?</h1>
-            <p class="md:text-lg">COVID-19 adalah penyakit yang disebabkan oleh virus severe acute respiratory syndrome
-                coronavirus 2 (SARS-CoV-2). COVID-19 dapat menyebabkan gangguan sistem pernapasan, mulai dari gejala
-                yang
-                ringan seperti flu, hingga infeksi paru-paru, seperti pneumonia.</p>
+            <h1 class="text-2xl md:text-4xl font-semibold mb-5 md:mb-8 text-left">Apa itu Covid-19?</h1>
+            <div class="leading-snug">
+                <p>COVID-19 adalah penyakit yang disebabkan oleh virus severe acute respiratory syndrome
+                    coronavirus 2 (SARS-CoV-2). COVID-19 dapat menyebabkan gangguan sistem pernapasan, mulai dari gejala
+                    yang
+                    ringan seperti flu, hingga infeksi paru-paru, seperti pneumonia.</p>
+            </div>
         </div>
-        <div class="w-2/5 mx-auto">
-            <img src="{{URL::asset('/images/pablo-573.png')}}" alt="">
-            <div class="text-sm text-center text-gray-300 mt-2">Illustration by <a
-                    href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a
-                    href="https://icons8.com/illustrations">Ouch!</a></a></div>
+        <div class="md:w-1/3 w-3/5">
+            <div class="">
+                <img src="{{URL::asset('/images/undraw_social_distancing_2g0u.svg')}}" alt=""
+                    class="w-full h-full">
+            </div>
         </div>
     </section>
 
-    <section class="flex justify-around flex-col md:flex-row px-8 md:px-28 bg-blue-50 py-4 mb-12 leading-relaxed">
-        <div class="w-2/5 mx-auto">
-            <img src="{{URL::asset('/images/pablo-578.png')}}" alt="">
-            <div class="text-sm text-center text-gray-300 mt-2">Illustration by <a
-                    href="https://icons8.com/illustrations/author/5c07e68d82bcbc0092519bb6">Icons 8</a> from <a
-                    href="https://icons8.com/illustrations">Ouch!</a></div>
+    <section class="flex justify-around items-center flex-col md:flex-row px-8 md:px-28 py-16">
+        <div class="md:w-2/5 w-3/5">
+            <img src="{{URL::asset('/images/undraw_sleep_analysis_o5f9.svg')}}" alt="" class="w-full h-full">
         </div>
         <div class="md:w-3/6 flex flex-col justify-center text-justify py-5">
-            <h1 class="text-2xl md:text-4xl font-bold mb-5 md:mb-8">Gejala Covid-19</h1>
-            <p class="md:text-lg">Gejala awal infeksi COVID-19 bisa menyerupai gejala flu, yaitu <span
+            <h1 class="text-2xl md:text-4xl font-semibold mb-5 md:mb-8 text-left">Gejala Covid-19</h1>
+            <div class="leading-snug">
+                Gejala awal infeksi COVID-19 bisa menyerupai gejala flu, yaitu <span
                     class="font-semibold">demam, pilek, batuk kering, sakit tenggorokan, dan sakit kepala</span>.
                 Setelah
                 itu, gejala dapat hilang dan sembuh atau malah memberat. Penderita dengan gejala yang berat bisa
                 mengalami
                 demam tinggi, batuk berdahak atau berdarah, sesak napas, dan nyeri dada. Gejala-gejala tersebut di atas
-                muncul ketika tubuh bereaksi melawan virus COVID-19.</p>
+                muncul ketika tubuh bereaksi melawan virus COVID-19.
+            </div>
         </div>
     </section>
 
