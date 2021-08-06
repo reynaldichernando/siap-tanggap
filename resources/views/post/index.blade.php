@@ -85,7 +85,7 @@
             ${!!profile_picture ? `<img class="h-10 w-10 mr-4 rounded-full border-2" src="/storage/${profile_picture}"
                         alt="profile" id="profilepic-image">`
             :
-                `<img class="h-10 w-10 mr-4 rounded-full border-2 object-cover" src="/storage/${profile_picture}"
+                `<img class="h-10 w-10 mr-4 rounded-full border-2 object-cover" src="/images/default-profile-image.jpg"
                         alt="profile" id="profilepic-image">`
             }
 
