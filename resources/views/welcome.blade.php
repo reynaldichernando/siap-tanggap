@@ -32,10 +32,10 @@
         </p>
         <a href="{{ route('home') }}"
             class="border-blue-200 border-2 bg-transparent py-2 px-4 rounded-full hover:bg-blue-200 hover:text-gray-500">Mulai</a>
-        <a class=" absolute bottom-12" href="#first-content"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 animate-bounce"
+        <button class="absolute bottom-12 focus:outline-none" onclick="document.getElementById('first-content').scrollIntoView(true);"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 animate-bounce"
                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg></a>
+            </svg></button>
     </section>
     
     <div id="first-content"
