@@ -78,7 +78,7 @@
                         text-teal-400
                         @break
                     @default
-                    text-blue-400
+                    text-blue-500
                 @endswitch">
                     {{ config('app.name', 'Laravel') }}
                 </a>
