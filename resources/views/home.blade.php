@@ -287,6 +287,10 @@
 
 @push('scripts')
 <script>
+    const numberWithCommas = (x) => {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
     let statisticURL = '{{ route('api.statistics') }}';
     let confirmedElement = document.querySelector('#confirmed'); 
     let recoveredElement = document.querySelector('#recovered'); 
@@ -295,9 +299,9 @@
     fetch(statisticURL)
     .then(response => response.json())
     .then(data => {
-        confirmedElement.innerHTML = data.positif;
-        recoveredElement.innerHTML = data.sembuh;
-        deathElement.innerHTML = data.meninggal;
+        confirmedElement.innerHTML = numberWithCommas(data.numbers.infected);
+        recoveredElement.innerHTML = numberWithCommas(data.numbers.recovered);
+        deathElement.innerHTML = numberWithCommas(data.numbers.fatal);
     })
 
     let newsURL = '{{ route('api.news') }}';
