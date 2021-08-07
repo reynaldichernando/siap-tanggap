@@ -30,7 +30,7 @@
 @section('content')
 
 @if(session()->has('message'))
-<div class="alert-toast fixed top-24 right-0 m-8 w-5/6 md:w-full max-w-sm">
+<div class="alert-toast fixed top-16 md:top-24 right-0 m-8 w-5/6 md:w-full max-w-sm z-10">
     <input type="checkbox" class="hidden" id="footertoast">
 
     <label
@@ -49,7 +49,7 @@
 @endif
 
 
-<form class="flex flex-col md:flex-row md:items-start md:space-x-10 justify-center px-12 items-center mt-32 mb-52"
+<form class="flex flex-col lg:flex-row lg:items-start md:space-x-10 justify-center px-12 items-center mt-32 mb-52"
     method="POST" action="{{ route('profile.edit') }}" enctype="multipart/form-data">
     @csrf
     <div class="relative w-20 h-20 md:w-40 md:h-40 rounded-full overflow-hidden cursor-pointer" id="profilepic-div">
@@ -63,7 +63,7 @@
         @endif
         <div class="absolute inset-0 bg-gray-500 flex flex-col justify-center items-center text-white opacity-0 transition-opacity ease-in-out"
             id="profilepic-content">
-            <span class="text-2xl font-semibold w-1/2 text-center">Ubah Foto Profil</span>
+            <span class="text-md md:text-2xl font-semibold w-1/2 text-center">Ubah Foto Profil</span>
         </div>
 
         <input type="file" class="hidden" id="input-image" name="profile-picture">
