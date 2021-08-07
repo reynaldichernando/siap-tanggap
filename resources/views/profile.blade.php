@@ -56,7 +56,7 @@
         <!-- profile image -->
         @if( Auth::user()->profile_picture )
         <img class="h-full w-full object-cover opacity-100 transition-opacity ease-in-out"
-            src="{{ Storage::url(Auth::user()->profile_picture) }}" alt="profile" id="profilepic-image">
+            src="{{ URL::asset('/uploads/'.Auth::user()->profile_picture) }}" alt="profile" id="profilepic-image">
         @else
         <img class="h-full w-full object-cover opacity-100 transition-opacity ease-in-out"
             src="{{ URL::asset('/images/default-profile-image.jpg') }}" alt="profile" id="profilepic-image">

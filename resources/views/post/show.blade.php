@@ -11,7 +11,7 @@
         <div class="flex items-center mb-4 px-4">
             <!-- profile image -->
             @if( $post->user->profile_picture )
-            <img class="h-10 w-10 rounded-full border-2 object-cover hidden md:block mr-4" src="{{ Storage::url($post->user->profile_picture) }}"
+            <img class="h-10 w-10 rounded-full border-2 object-cover hidden md:block mr-4" src="{{ URL::asset('/uploads/'.$post->user->profile_picture) }}"
                         alt="profile" id="profilepic-image">
             @else
             <img class="h-10 w-10 rounded-full border-2 object-cover hidden md:block mr-4" src="{{ URL::asset('/images/default-profile-image.jpg') }}"
@@ -24,8 +24,8 @@
         </div>
         <p class="flex flex-col flex-1 leading-snug px-4">{{ $post->description }}</p>
         @if ($post->image)
-        <a href="{{ Storage::url($post->image) }}" target="_blank" rel="noopener noreferrer"><img class="mt-4 w-full"
-                src="{{ Storage::url($post->image) }}" alt="${username}'s post"></a>
+        <a href="{{ URL::asset('/uploads/'.$post->image) }}" target="_blank" rel="noopener noreferrer"><img class="mt-4 w-full"
+                src="{{ URL::asset('/uploads/'.$post->image) }}" alt="{{ $post->user->name }}'s post"></a>
         @endif
     </div>
 
@@ -36,7 +36,7 @@
                 <div class="flex items-center mb-4 px-4">
                     <!-- profile image -->
                     @if( $reply->user->profile_picture )
-                    <img class="h-10 w-10 rounded-full border-2 object-cover hidden md:block mr-4" src="{{ Storage::url($reply->user->profile_picture) }}"
+                    <img class="h-10 w-10 rounded-full border-2 object-cover hidden md:block mr-4" src="{{ URL::asset('/uploads/'.$reply->user->profile_picture) }}"
                                 alt="profile" id="profilepic-image">
                     @else
                     <img class="h-10 w-10 rounded-full border-2 object-cover hidden md:block mr-4" src="{{ URL::asset('/images/default-profile-image.jpg') }}"
@@ -62,7 +62,7 @@
     <div class="flex flex-col md:flex-row w-11/12 md:w-3/5 lg:w-1/2 bg-white p-4 rounded shadow my-8">
         <!-- profile image -->
         @if( Auth::user()->profile_picture )
-        <img class="h-10 w-10 rounded-full border-2 object-cover hidden md:block mr-4" src="{{ Storage::url(Auth::user()->profile_picture) }}"
+        <img class="h-10 w-10 rounded-full border-2 object-cover hidden md:block mr-4" src="{{ URL::asset('/uploads/'.Auth::user()->profile_picture) }}"
                     alt="profile" id="profilepic-image">
         @else
         <img class="h-10 w-10 rounded-full border-2 object-cover hidden md:block mr-4" src="{{ URL::asset('/images/default-profile-image.jpg') }}"

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ProfileController extends Controller
 {
@@ -32,7 +33,7 @@ class ProfileController extends Controller
         
         
         if ($request->hasFile('profile-picture'))
-            $user->profile_picture = $request->file('profile-picture')->store('images', 'public');
+            $user->profile_picture = $request->file('profile-picture')->storeAs('images', $request->file('profile-picture')->hashName(), 'uploads');
         
 
         // dd($user);
