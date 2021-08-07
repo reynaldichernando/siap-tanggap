@@ -85,7 +85,7 @@
             ${!!profile_picture ? `<img class="h-10 w-10 mr-4 object-cover rounded-full border-2" src="/storage/${profile_picture}"
                         alt="profile" id="profilepic-image">`
             :
-                `<img class="h-10 w-10 mr-4 rounded-full border-2 object-cover" src="/images/default-profile-image.jpg"
+                `<img class="h-10 w-10 mr-4 rounded-full border-2 object-cover" src="images/default-profile-image.jpg"
                         alt="profile" id="profilepic-image">`
             }
 
@@ -101,7 +101,7 @@
         ${!!image ? 
             `<a href="/storage/${image}" target="_blank" rel="noopener noreferrer"><img class="mt-4 w-full" src="/storage/${image}" alt="${username}'s post"></a>` : 
             ''}
-        <a class="mt-4 self-start text-sm text-gray-700 mx-4" href="/discussion/${id}">Lihat Komentar</a>
+        <a class="mt-4 self-start text-sm text-gray-700 mx-4" href="discussion/${id}">Lihat Komentar</a>
     </div>
     `;
 
