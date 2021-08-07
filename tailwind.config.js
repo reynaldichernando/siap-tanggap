@@ -4,9 +4,27 @@ module.exports = {
     './resources/css/**/*.css',
   ],
   theme: {
-    extend: {}
+    extend: {
+      animation: {
+        fadeIn: "fadeIn 0.5s ease-out forwards"
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(50px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          },
+        }
+      }
+    }
   },
-  variants: {},
+  variants: {
+    animation: ["motion-safe"]
+  },
   plugins: [
     require('@tailwindcss/ui'),
     require('@tailwindcss/custom-forms'),
