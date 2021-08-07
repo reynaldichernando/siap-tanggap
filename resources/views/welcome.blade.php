@@ -27,49 +27,54 @@
             {{ config('app.name', 'siaptanggap') }}
         </div>
         <p class="w-4/5 md:w-2/5 text-lg leading-6" style="filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.50));">
-            Pusat informasi Covid-19 di Indonesia. Dapatkan informasi terbaru terkait Covid-19 serta pelaksanaan vaksinasi
+            Pusat informasi Covid-19 di Indonesia. Dapatkan informasi terbaru terkait Covid-19 serta pelaksanaan
+            vaksinasi
             di Indonesia.
         </p>
         <a href="{{ route('home') }}"
             class="border-blue-200 border-2 bg-transparent py-2 px-4 rounded-full hover:bg-blue-200 hover:text-gray-500">Mulai</a>
-        <button class="absolute bottom-12 focus:outline-none" onclick="document.getElementById('first-content').scrollIntoView(true);"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 animate-bounce"
-                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <button class="absolute bottom-12 focus:outline-none"
+            onclick="document.getElementById('first-content').scrollIntoView(true);"><svg
+                xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 animate-bounce" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg></button>
     </section>
-    
+
     <div id="first-content"
         class='w-full bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 flex flex-col py-24 text-white'>
         <div
-            class='flex flex-col md:flex-row md:space-x-4 justify-center items-center space-y-4 md:space-y-0 lg:px-52 font-semibold text-center'>
+            class='flex flex-col md:flex-row md:space-x-4 justify-center items-center space-y-4 md:space-y-0 lg:px-52 font-semibold text-center js-show-on-scroll'>
             <img src="{{ URL::asset('/images/taxi-satch-virus-molecules-1.png') }}" class="md:w-1/2" alt="">
             <div class="w-4/5 md:w-2/5">
                 <h2 class="text-3xl text-left mb-6">Pantau Kasus dan Berita Covid-19 Terbaru</h2>
                 <p class="text-left text-lg leading-relaxed">
-                    Pahami virusnya dan cara menghadapinya dan Baca berita terbaru dan terpercaya di website kami. Pelajari
+                    Pahami virusnya dan cara menghadapinya dan Baca berita terbaru dan terpercaya di website kami.
+                    Pelajari
                     jenis varian Covid-19 serta diagnosis dan gejalanya.
                 </p>
             </div>
         </div>
     </div>
-    
+
     <div class='w-full bg-gradient-to-b from-pink-500 to-purple-500 flex flex-co py-24 text-white'>
         <div
-            class='flex flex-col-reverse md:flex-row md:space-x-4 justify-center items-center space-y-4 md:space-y-0 lg:px-52 font-semibold text-center'>
+            class='flex flex-col-reverse md:flex-row md:space-x-4 justify-center items-center space-y-4 md:space-y-0 lg:px-52 font-semibold text-center js-show-on-scroll'>
             <div class="w-4/5 md:w-2/5">
                 <h2 class="text-3xl text-left mb-6">Cari Lokasi Vaksinasi Terdekat</h2>
                 <p class="text-left text-lg leading-relaxed">
-                    Ketik nama daerah dan cari lokasi vaksinasi di daerah anda. Anda juga dapat mencari tahu tujuan vaksin
+                    Ketik nama daerah dan cari lokasi vaksinasi di daerah anda. Anda juga dapat mencari tahu tujuan
+                    vaksin
                     dan jenis-jenis vaksin yang tersedia.
                 </p>
             </div>
             <img src="{{ URL::asset('/images/corona virus covid 19 vaccine_5878465.png') }}" class="md:w-1/2" alt="">
         </div>
     </div>
-    
+
     <div class='w-full bg-gradient-to-b from-purple-500 to-orange-500 flex flex-col py-24 text-white'>
         <div
-            class='flex flex-col md:flex-row md:space-x-4 justify-center items-center space-y-4 md:space-y-0 lg:px-52 font-semibold text-center'>
+            class='flex flex-col md:flex-row md:space-x-4 justify-center items-center space-y-4 md:space-y-0 lg:px-52 font-semibold text-center js-show-on-scroll'>
             <img src="{{ URL::asset('/images/undraw_Public_discussion_re_w9up.svg') }}" class="md:w-1/2" alt="">
             <div class="w-4/5 md:w-2/5">
                 <h2 class="text-3xl text-left mb-6">Gabung Dalam Komunitas</h2>
@@ -79,8 +84,8 @@
             </div>
         </div>
     </div>
-    
-    <div id='features' class='text-center w-full bg-orange-500 flex flex-col space-y-4 py-12 md:py-24 text-white'>
+
+    <div id='features' class='text-center w-full bg-orange-500 flex flex-col space-y-4 py-24 md:py-48 text-white'>
         <div class='text-4xl font-semibold'>
             <h2>Fitur</h2>
             <hr class="border-t-2 border-orange-400 w-1/6 mt-6 mb-12 mx-auto" />
@@ -122,5 +127,34 @@
             </div>
         </div>
     </div>
+
+    <div class="w-full flex flex-col items-center justify-center bg-orange-500 py-24 text-white">
+        <div class="w-4/5 md:w-2/5 flex flex-col items-center justify-center">
+            <h3 class="mb-16 font-bold text-3xl leading-snug text-center">Mulai mencari dengan siaptanggap</h3>
+            <a href="{{ route('home') }}"
+                class="py-4 px-8 rounded-full bg-white text-gray-800 text-center font-bold text-xl">Masuk ke Beranda</a>
+        </div>
+    </div>
 </main>
 @endsection
+
+@push('scripts')
+<script>
+    const targets = document.querySelectorAll(".js-show-on-scroll");
+
+const callback = function(entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("motion-safe:animate-fadeIn");
+    }
+  });
+};
+const observer = new IntersectionObserver(callback);
+
+targets.forEach(function(target) {
+  target.classList.add("opacity-0");
+  observer.observe(target);
+});
+
+</script>
+@endpush
