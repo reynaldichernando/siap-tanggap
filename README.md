@@ -18,6 +18,15 @@ Instalasi
 5. Buka browser pada URL http://localhost/siap-tanggap/ seperti pada gambar
 ![](docs/localhost.png)
 
+Credentials user untuk login dapat menggunakan:
+- reynaldi@user.com
+- stephen@user.com
+- naomi@user.com
+- thomas@user.com
+- felix@user.com
+
+dengan password 12345678
+
 ## Screenshots
 ![](docs/landing.png)
 ![](docs/home-1.png)
