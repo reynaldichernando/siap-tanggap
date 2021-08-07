@@ -85,7 +85,7 @@
         </div>
     </div>
 
-    <div id='features' class='text-center w-full bg-orange-500 flex flex-col space-y-4 py-12 md:py-24 text-white'>
+    <div id='features' class='text-center w-full bg-orange-500 flex flex-col space-y-4 py-24 md:py-48 text-white'>
         <div class='text-4xl font-semibold'>
             <h2>Fitur</h2>
             <hr class="border-t-2 border-orange-400 w-1/6 mt-6 mb-12 mx-auto" />
@@ -125,6 +125,14 @@
                 <h3 class="text-lg p-4">Forum Diskusi</h3>
                 <p class="text-xs">Ajukan pertanyaan dan diskusikan bersama para pengguna lainnya</p>
             </div>
+        </div>
+    </div>
+
+    <div class="w-full flex flex-col items-center justify-center bg-orange-500 py-24 text-white">
+        <div class="w-4/5 md:w-2/5 flex flex-col items-center justify-center">
+            <h3 class="mb-16 font-bold text-3xl leading-snug text-center">Mulai mencari dengan siaptanggap</h3>
+            <a href="{{ route('home') }}"
+                class="py-4 px-8 rounded-full bg-white text-gray-800 text-center font-bold text-xl">Masuk ke Beranda</a>
         </div>
     </div>
 </main>
