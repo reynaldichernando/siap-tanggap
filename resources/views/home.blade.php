@@ -364,15 +364,24 @@
         </a>
     `;
 
-    fetch(newsURL)
-    .then(response => response.json())
-    .then(data => {
-        data.items.forEach(article => {
-            newsSectionElement.innerHTML += createNewsTemplate(`https://today.line.me/id/v2/article/${article.url.hash}`, article.title, article.publisher, `https://obs.line-scdn.net/${article.thumbnail.hash}/w1200`);
+    const callback = function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            fetch(newsURL)
+            .then(response => response.json())
+            .then(data => {
+                newsSectionElement.innerHTML = '';
+                data.items.forEach(article => {
+                    newsSectionElement.innerHTML += createNewsTemplate(`https://today.line.me/id/v2/article/${article.url.hash}`, article.title, article.publisher, `https://obs.line-scdn.net/${article.thumbnail.hash}/w1200`);
+                });
+                newsSkeletonElement.classList.remove('flex');
+                newsSkeletonElement.classList.add('hidden');
+                })
+            }
         });
-        newsSkeletonElement.classList.remove('flex');
-        newsSkeletonElement.classList.add('hidden');
-    })
+    };
+    const observer = new IntersectionObserver(callback);
+    observer.observe(newsSkeletonElement);
 
     let dateElement = document.querySelector('#date');
     let month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'December'];
