@@ -98,7 +98,7 @@
                     </svg>
                 </p>
                 <h3 class="text-lg p-4">Home</h3>
-                <p class="text-xs">Track current Covid-19 cases in Indonesia and related informations.</p>
+                <p class="text-xs px-4">Track current Covid-19 cases in Indonesia and related informations.</p>
             </div>
             <div class='flex-1 py-2 rounded-xl'>
                 <p class="flex justify-center">
@@ -109,7 +109,7 @@
                     </svg>
                 </p>
                 <h3 class="text-lg p-4">Vaccination Location</h3>
-                <p class="text-xs">Find nearest vaccination location in your area.</p>
+                <p class="text-xs px-4">Find nearest vaccination location in your area.</p>
             </div>
             <div class='flex-1 py-2 rounded-xl'>
                 <p class="flex justify-center">
@@ -120,7 +120,7 @@
                     </svg>
                 </p>
                 <h3 class="text-lg p-4">Discussion Forum</h3>
-                <p class="text-xs">Ask question and discuss with other users.</p>
+                <p class="text-xs px-4">Ask question and discuss with other users.</p>
             </div>
         </div>
     </div>
