@@ -2,7 +2,7 @@
 
 @section('content')
 <main class="flex flex-col items-center py-8">
-    <h1 class="text-4xl">Forum Diskusi</h1>
+    <h1 class="text-4xl">Discussion Forum</h1>
     @auth
     <div class="flex flex-col md:flex-row w-11/12 md:w-3/5 lg:w-1/2 bg-white p-4 rounded shadow my-8">
         <!-- <div class="h-10 w-10 mr-4 bg-teal-300 rounded-full hidden md:block">
@@ -24,11 +24,11 @@
                 <textarea
                     class="shadow appearance-none border rounded mb-4 text-gray-700 resize-none p-2 focus:outline-none focus:shadow-outline leading-snug"
                     name="description" id="description" rows="4" maxlength="200"
-                    placeholder="Apa yang ada di pikiran anda?" required></textarea>
+                    placeholder="What's on your mind?" required></textarea>
                 <div class="flex items-center">
                     <label
                         class="font-bold text-sm text-teal-500 hover:text-teal-800 cursor-pointer"
-                        for="image" id="lblImage">+ Tambah Gambar</label>
+                        for="image" id="lblImage">+ Add Image</label>
                     <button id="clear-image" class="hidden ml-4 focus:outline-none" onclick="event.preventDefault(); document.querySelector('#image').value = ''; document.querySelector('#lblImage').innerHTML = '+ Add Image'; this.classList.add('hidden')">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -41,7 +41,7 @@
             <div class="text-right">
                 <button
                     class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    type="submit">Kirim</button>
+                    type="submit">Send</button>
             </div>
         </form>
     </div>
@@ -101,7 +101,7 @@
         ${!!image ? 
             `<a href="uploads/${image}" target="_blank" rel="noopener noreferrer"><img class="mt-4 w-full" src="uploads/${image}" alt="${username}'s post"></a>` : 
             ''}
-        <a class="mt-4 self-start text-sm text-gray-700 mx-4" href="discussion/${id}">Lihat Komentar</a>
+        <a class="mt-4 self-start text-sm text-gray-700 mx-4" href="discussion/${id}">View Replies</a>
     </div>
     `;
 

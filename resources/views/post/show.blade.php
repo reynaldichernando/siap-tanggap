@@ -5,7 +5,7 @@
     <div class="flex w-11/12 md:w-3/5 lg:w-1/2 m-2">
         <a class="flex flex-row items-center" href="{{ route('post') }}"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
-          </svg><span class="text-md ml-1">Kembali ke Forum</span></a>
+          </svg><span class="text-md ml-1">Back to Forum</span></a>
     </div>
     <div class="flex flex-col w-11/12 md:w-3/5 lg:w-1/2 m-4 bg-white py-4 rounded shadow">
         <div class="flex items-center mb-4 px-4">
@@ -51,13 +51,13 @@
             </div>
         </div>
         @empty
-        <p>Belum ada komentar.</p>
+        <p>No replies yet.</p>
         @endforelse
     </div>
 
     @auth
     <div class="flex flex-col md:flex-row w-11/12 md:w-3/5 lg:w-1/2">
-        <h3 class="text-2xl mt-8 ">Komentar</h3>
+        <h3 class="text-2xl mt-8 ">Reply</h3>
     </div>
     <div class="flex flex-col md:flex-row w-11/12 md:w-3/5 lg:w-1/2 bg-white p-4 rounded shadow my-8">
         <!-- profile image -->
@@ -74,12 +74,12 @@
                 <textarea
                     class="shadow appearance-none border rounded mb-4 text-gray-700 resize-none p-2 focus:outline-none focus:shadow-outline leading-snug"
                     name="description" id="description" rows="4" maxlength="200"
-                    placeholder="Apa yang ada di pikiran anda?" required></textarea>
+                    placeholder="Reply" required></textarea>
             </div>
             <div class="text-right">
                 <button
                     class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    type="submit">Kirim</button>
+                    type="submit">Send</button>
             </div>
         </form>
     </div>
