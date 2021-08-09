@@ -114,7 +114,7 @@
                             href="{{ route('register') }}">{{ __('Register') }}</a>
                         @endif
                         @else
-                        <a href="{{ route('profile') }}" class="md:p-4 py-3 px-0 hover:opacity-75 duration-200">
+                        <a href="{{ route('profile') }}" class="md:p-4 py-3 px-0 block hover:opacity-75 duration-200">
                             {{ explode(' ',trim(Auth::user()->name))[0] }}
                         </a>
 
