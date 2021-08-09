@@ -97,11 +97,11 @@
                 <nav class="flex">
                     <div class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-blue-400 {{ Route::is('home') ? 'text-blue-400' : '' }}"
-                            href="{{ route('home') }}">Beranda</a>
+                            href="{{ route('home') }}">Home</a>
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-purple-400 {{ Route::is('vaccination') ? 'text-purple-400' : '' }}"
-                            href="{{ route('vaccination') }}">Lokasi Vaksinasi</a></li>
+                            href="{{ route('vaccination') }}">Vaccination Location</a></li>
                         <a class="md:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-teal-400 {{ Route::is('post') ? 'text-teal-400' : '' }}"
-                            href="{{ route('post') }}">Forum Diskusi</a>
+                            href="{{ route('post') }}">Discussion Forum</a>
                     </div>
                 </nav>
                 <nav class="flex">
@@ -142,15 +142,15 @@
                     </div>
                 </div>
                 <div>
-                    <div class="font-semibold mb-4 text-xl">Fitur</div>
+                    <div class="font-semibold mb-4 text-xl">Features</div>
                     <div class="flex flex-col items-start space-y-2 text-md">
-                        <a href="{{ route('home') }}">Beranda</a>
-                        <a href="{{ route('vaccination') }}">Lokasi Vaksinasi</a>
-                        <a href="{{ route('post') }}">Forum Diskusi</a>
+                        <a href="{{ route('home') }}">Home</a>
+                        <a href="{{ route('vaccination') }}">Vaccination Location</a>
+                        <a href="{{ route('post') }}">Discussion Forum</a>
                     </div>
                 </div>
                 <div>
-                    <div class="font-semibold mb-4 text-xl">Hubungi Kami</div>
+                    <div class="font-semibold mb-4 text-xl">Contact Us</div>
                     <div class="flex flex-col items-start space-y-2 text-md">
                         <div class="flex flex-row items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
@@ -171,7 +171,7 @@
                     </div>
                 </div>
                 <div>
-                    <div class="font-semibold mb-4 text-xl">Ikuti Kami</div>
+                    <div class="font-semibold mb-4 text-xl">Follow Us</div>
                     <div class="flex flex-col items-start space-y-2 text-md">
                         <div class="flex flex-col">
                             <div>Reynaldi Chernando</div>
