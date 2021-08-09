@@ -3,10 +3,10 @@
 @section('content')
 <main class="flex flex-col items-center">
     <section class="flex justify-center bg-purple-100 w-full">
-        <h1 class="text-4xl mt-16 mb-8">Lokasi Vaksinasi</h1>
+        <h1 class="text-4xl mt-16 mb-8">Vaccination Location</h1>
     </section>
     <section class="flex flex-col items-center justify-center w-full pt-20 pb-40 px-10 bg-purple-100">
-        <h3 class="text-xl mb-10 text-center">Cari Fasilitas Kesehatan Penyedia Vaksinasi Covid-19</h3>
+        <h3 class="text-xl mb-10 text-center">Find Health Facilities Providing Covid-19 Vaccinations</h3>
         <form id="hospital-search" action="#" method="POST" class="flex flex-col items-center w-full mb-16">
             <div class="w-full md:w-4/5 lg:w-3/5 xl:w-2/5 flex items-center mb-4 relative">
                 <input type="text" id="search" name="search" class="w-full focus:outline-none form-input p-4 pr-14"
@@ -53,25 +53,29 @@
 
     <section class="flex flex-col-reverse justify-around py-16 md:flex-row items-center">
         <div class="md:w-3/6 flex flex-col justify-center text-justify py-5 px-8">
-            <h1 class="text-2xl md:text-4xl font-semibold mb-5 md:mb-8 text-left">Apa itu Vaksin?</h1>
+            <h1 class="text-2xl md:text-4xl font-semibold mb-5 md:mb-8 text-left">What is Vaccine?</h1>
             <div class="leading-snug">
-                <p>Dirangkum dari laman World Health Organization (WHO), vaksin mengandung antigen yang sama dengan
-                    antigen
-                    yang menyebabkan penyakit. </p>
+                <p>
+                    Summarized from the World Health Organization (WHO) page, vaccine contains antigen with the same
+                    antigen that causes disease.
+                </p>
                 <br>
-                <p>Namun antigen yang ada di dalam vaksin tersebut sudah dikendalikan (dilemahkan) sehingga pemberian
-                    vaksin
-                    tidak menyebabkan orang menderita penyakit seperti jika orang tersebut terpapar dengan antigen yang
-                    sama
-                    secara alamiah.</p>
+                <p>
+                    However, the antigen in the vaccine is already weakened so that vaccination does not cause people to
+                    suffer the same disease as if that person is exposed to the same antigen naturally.
+                </p>
                 <br>
-                <p>Vaksinasi adalah kegiatan pemberian vaksin kepada seseorang di mana vaksin tersebut berisi satu atau
-                    lebih antigen. Saat vaksin dimasukkan ke dalam tubuh, sistem kekebalan tubuh akan melihatnya sebagai
-                    antigen atau musuh.</p>
+                <p>
+                    Vaccination is a process of giving vaccine to somebody where the vaccine contains one or more
+                    antigen.
+                    When the vaccine enters the body, the imune system will see it as antigen or enemy.
+                </p>
                 <br>
-                <p>Dengan begitu, sebagai respon adanya ancaman dari musuh maka tubuh akan memproduksi antibodi untuk
-                    melawan antigen tersebut. Namun, kekebalan yang didapat melalui vaksinasi, tidaklah bertahan seumur
-                    hidup terhadap infeksi penyakit berbahaya. </p>
+                <p>
+                    Therefore, as a response from threat, the body will then produce antibodies to fight the antigen.
+                    However, the immunity received by vaccinations, does not last a lifetime against dangerous
+                    infectious disease.
+                </p>
             </div>
         </div>
         <div class="md:w-1/3 w-3/5">
@@ -87,29 +91,27 @@
             <img src="{{URL::asset('/images/doctor-colour.svg')}}" alt="" class="w-full h-full">
         </div>
         <div class="md:w-3/6 flex flex-col justify-center text-justify py-5">
-            <h1 class="text-2xl md:text-4xl font-semibold mb-5 md:mb-8 text-left">Mengapa Harus Vaksin?</h1>
+            <h1 class="text-2xl md:text-4xl font-semibold mb-5 md:mb-8 text-left">Why Vaccinate?
+            </h1>
             <div class="leading-snug">
                 <p>
-                    Melalui vaksin, tubuh akan terlindungi dengan cara membentuk respons antibodi
-                    tanpa
-                    harus
-                    sakit terlebih dahulu. Artinya, vaksin COVID-19 mampu melindungi tubuh seseorang dari infeksi virus
-                    corona.
-                    Tidak hanya itu, jika kamu terinfeksi virus penyebab COVID-19, vaksin bisa membantu mencegah tubuhmu
-                    dari
-                    sakit parah atau potensi munculnya komplikasi serius.
+                    Through vaccination, the body will be protected by creating antibodies response without having to
+                    get sick first.
+                    It means that the COVID-19 case can protect someone's body from the Coronavirus infection.
+                    Not only that, if you are infected by the COVID-19, the vaccine can help prevent your body from
+                    severe symptoms or the potential of serious complications.
                 </p>
                 <br>
                 <p>
-                    Selain itu, dengan mengikuti vaksinasi kamu juga telah membantu mempercepat penanganan Covid-19 di
-                    masyarakat dengan pembentukan herd immunity.
+                    Besides that, by getting vaccinated, you also participate in helping speed up Covid-19 handling in
+                    public by creating herd immunity.
                 </p>
             </div>
         </div>
     </section>
 
     <section class="flex flex-col items-center mb-8">
-        <h3 class="text-3xl m-8 text-center">Jenis Vaksin</h3>
+        <h3 class="text-3xl m-8 text-center">Vaccine Types</h3>
 
         <div class="flex flex-row flex-wrap justify-center my-4">
             <div
@@ -120,11 +122,10 @@
                 <div class="p-8">
                     <h5 class="text-green-600 text-lg mb-8">AstraZeneca</h5>
                     <p class="leading-tight text-md">
-                        AstraZeneca menggunakan virus adeno hidup (adenovirus) yang telah dimodifikasi sebagai
-                        'pengirim'
-                        protein khusus. Protein tersebut akan menginstruksikan sel tubuh untuk memproduksi sebagian
-                        kecil
-                        dari virus Corona yang kemudian memicu respons imun.
+                        AstreZeneca uses live adeno virus (adenovirus) that have been modified as 'sender' of certain
+                        protein.
+                        That protein will instruct the body cells to produce small portion of the Coronavirus which then
+                        will trigger the immune response.
                     </p>
                 </div>
             </div>
@@ -136,11 +137,9 @@
                 <div class="p-8">
                     <h5 class="text-red-600 text-lg mb-8">Sinovac</h5>
                     <p class="leading-tight text-md">
-                        Sinovac memanfaatkan virus SARS-COV-2 yang telah dimatikan (inactivated) untuk memicu respons
-                        imun.
-                        Metode ini sudah terbukti manjur dan telah digunakan dalam pengembangan vaksin lain, seperti
-                        vaksin
-                        flu dan vaksin polio.
+                        Sinovac utilizes SARS-COV-2 virus that has been inactivated to trigger the immune response.
+                        This method is proven to be effective and has been used for other vaccine development, such as
+                        flu vaccine and polio vaccine.
                     </p>
                 </div>
             </div>
@@ -153,10 +152,10 @@
                 <div class="p-8">
                     <h5 class="text-purple-600 text-lg mb-8">Sinopharm</h5>
                     <p class="leading-tight text-md">
-                        Sinopharm merupakan vaksin buatan China dan telah diujikan di beberapa negara. Vaksin Sinopharm
-                        telah masuk dalam list WHO dan mendapatkan EUA di China, Uni Emirat Arab, Bahrain, Mesir, dan
-                        Yordania, dan kini juga di Indonesia. Vaksin ini menggunakan platform yang sama dengan vaksin
-                        Sinovac, yaitu virus yang diinaktivasi.
+                        Sinopharm is a China made vaccine and has been tested in several countries. The Sinopharm
+                        vaccine has been added to the WHO list and has received EUA in China, United Arab Emirates,
+                        Bahrain, Egypt, Jordan, and now in Indoesia. This vaccine uses the same platform as Sinovac,
+                        which is inactivated virus.
                     </p>
                 </div>
             </div>
