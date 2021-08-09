@@ -85,26 +85,25 @@
 @section('content')
 <main class="flex flex-col items-center">
     <section class="flex flex-col justify-center w-11/12 md:w-3/5 lg:w-1/2 items-center my-5 md:my-18 text-center">
-        <h1 class="text-4xl m-4 font-semibold">Kasus COVID-19 Indonesia</h1>
-        <div
-            class="rounded-xl shadow-lg bg-white w-4/5 p-4 m-16">
+        <h1 class="text-4xl m-4 font-semibold">COVID-19 Cases in Indonesia</h1>
+        <div class="rounded-xl shadow-lg bg-white w-4/5 p-4 m-16">
             <div class="flex flex-wrap justify-center">
                 <div class="flex justify center flex-col p-5">
-                    <h2 class="text-sm md:text-xl">Terkonfirmasi</h2>
+                    <h2 class="text-sm md:text-xl">Confirmed</h2>
                     <h3 id="confirmed" class="m-2 text-4xl font-semibold">
                         <div class="h-9 w-36 mx-auto bg-gray-300 animate-pulse rounded-full"></div>
                     </h3>
                 </div>
-    
+
                 <div class="flex justify center flex-col p-5">
-                    <h2 class="text-sm md:text-xl">Sembuh</h2>
+                    <h2 class="text-sm md:text-xl">Recovered</h2>
                     <h3 id="recovered" class="m-2 text-4xl font-semibold">
                         <div class="h-9 w-36 mx-auto bg-gray-300 animate-pulse rounded-full"></div>
                     </h3>
                 </div>
-    
+
                 <div class="flex justify center flex-col p-5">
-                    <h2 class="text-sm md:text-xl">Meninggal</h2>
+                    <h2 class="text-sm md:text-xl">Deaths</h2>
                     <h3 id="death" class="m-2 text-4xl font-semibold">
                         <div class="h-9 w-36 mx-auto bg-gray-300 animate-pulse rounded-full"></div>
                     </h3>
@@ -118,18 +117,19 @@
 
     <section class="flex flex-col-reverse justify-around py-16 md:flex-row items-center bg-blue-100">
         <div class="md:w-3/6 flex flex-col justify-center text-justify py-5 px-8">
-            <h1 class="text-2xl md:text-4xl font-semibold mb-5 md:mb-8 text-left">Apa itu Covid-19?</h1>
+            <h1 class="text-2xl md:text-4xl font-semibold mb-5 md:mb-8 text-left">What is Covid-19?</h1>
             <div class="leading-snug">
-                <p>COVID-19 adalah penyakit yang disebabkan oleh virus severe acute respiratory syndrome
-                    coronavirus 2 (SARS-CoV-2). COVID-19 dapat menyebabkan gangguan sistem pernapasan, mulai dari gejala
-                    yang
-                    ringan seperti flu, hingga infeksi paru-paru, seperti pneumonia.</p>
+                <p>
+                    COVID-19 is a disease caused by the severe acute respiratory syndrome coronavirus 2 virus
+                    (SARS-CoV-2).
+                    COVID-19 can causes respiratory system disorders, ranging from mild symptoms such as flu, to lung
+                    infection such as pneumonia.
+                </p>
             </div>
         </div>
         <div class="md:w-1/3 w-3/5">
             <div class="">
-                <img src="{{URL::asset('/images/undraw_social_distancing_2g0u.svg')}}" alt=""
-                    class="w-full h-full">
+                <img src="{{URL::asset('/images/undraw_social_distancing_2g0u.svg')}}" alt="" class="w-full h-full">
             </div>
         </div>
     </section>
@@ -139,102 +139,98 @@
             <img src="{{URL::asset('/images/undraw_sleep_analysis_o5f9.svg')}}" alt="" class="w-full h-full">
         </div>
         <div class="md:w-3/6 flex flex-col justify-center text-justify py-5">
-            <h1 class="text-2xl md:text-4xl font-semibold mb-5 md:mb-8 text-left">Gejala Covid-19</h1>
+            <h1 class="text-2xl md:text-4xl font-semibold mb-5 md:mb-8 text-left">Covid-19 Symptoms</h1>
             <div class="leading-snug">
-                Gejala awal infeksi COVID-19 bisa menyerupai gejala flu, yaitu <span
-                    class="font-semibold">demam, pilek, batuk kering, sakit tenggorokan, dan sakit kepala</span>.
-                Setelah
-                itu, gejala dapat hilang dan sembuh atau malah memberat. Penderita dengan gejala yang berat bisa
-                mengalami
-                demam tinggi, batuk berdahak atau berdarah, sesak napas, dan nyeri dada. Gejala-gejala tersebut di atas
-                muncul ketika tubuh bereaksi melawan virus COVID-19.
+                Early symptoms of COVID-19 can resemble flu such as <span class="font-semibold">fever, runny nose, dry
+                    cough, sore throat and headache</span>.
+                After that, symptoms can disappear and recover or instead worsen. Patient with severe symptoms can
+                experience
+                high fever, cough with phlegm or blood, difficulty breathing, and chest pain. These symptoms appear
+                when the body reacted by fighting the COVID-19 virus.
             </div>
         </div>
     </section>
 
     <section class="flex flex-col bg-blue-100 py-16 w-full">
         <div class="w-full mx-auto p-8">
-            <h3 class="text-center text-xl md:text-4xl mb-8 font-semibold">Varian Covid-19</h3>
+            <h3 class="text-center text-xl md:text-4xl mb-8 font-semibold">Covid-19 Variants</h3>
             <div class="shadow-md bg-white lg:w-1/2 mx-auto">
                 <div class="tab w-full overflow-hidden border-t">
                     <input class="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs">
-                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">Varian Alfa</label>
+                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-one">Alpha Variant</label>
                     <div class="tab-content overflow-hidden bg-gray-100 leading-normal pl-8">
                         <ul class="list-disc py-4">
-                            <li><strong>Kode varian:</strong> B. 1.1.7</li>
-                            <li><strong>Kasus pertama kali ditemukan:</strong> Inggris, September 2020</li>
-                            <li><strong>Tingkat penularan virus:</strong> 43–90% lebih mudah menular dari virus Corona
-                                sebelumnya</li>
-                            <li><strong>Tingkat keparahan infeksi:</strong> lebih berpotensi menimbulkan gejala berat
-                                dan
-                                peningkatan risiko rawat inap dari virus Corona jenis awal</li>
+                            <li><strong>Variant Code:</strong> B. 1.1.7</li>
+                            <li><strong>First discovered case:</strong> England, September 2020</li>
+                            <li><strong>Virus infection rate:</strong> 43–90% more easily transmitted than previous
+                                Coronavirus</li>
+                            <li><strong>Infection severity:</strong> higher potential to cause severe symptoms and
+                                higher risk of hospitalization from previous Coronavirus</li>
                         </ul>
                     </div>
                 </div>
                 <div class="tab w-full overflow-hidden border-t">
                     <input class="absolute opacity-0" id="tab-multi-two" type="checkbox" name="tabs">
-                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">Varian Beta</label>
+                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-two">Beta Variant</label>
                     <div class="tab-content overflow-hidden bg-gray-100 leading-normal pl-8">
                         <ul class="list-disc py-4">
-                            <li><strong>Kode varian:</strong> B. 1.351</li>
-                            <li><strong>Kasus pertama kali ditemukan:</strong> Afrika Selatan, Mei 2020</li>
-                            <li><strong>Tingkat penularan virus:</strong> belum diketahui</li>
-                            <li><strong>Tingkat keparahan infeksi:</strong> lebih berisiko menyebabkan gejala berat</li>
+                            <li><strong>Variant Code:</strong> B. 1.351</li>
+                            <li><strong>First discovered case:</strong> South Africa, May 2020</li>
+                            <li><strong>Virus infection rate:</strong> Unknown</li>
+                            <li><strong>Infection severity:</strong> higher risk to cause severe symptoms</li>
                         </ul>
                     </div>
                 </div>
                 <div class="tab w-full overflow-hidden border-t">
                     <input class="absolute opacity-0" id="tab-multi-three" type="checkbox" name="tabs">
-                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-three">Varian Gamma</label>
+                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-three">Gamma Variant</label>
                     <div class="tab-content overflow-hidden bg-gray-100 leading-normal pl-8">
                         <ul class="list-disc py-4">
-                            <li><strong>Kode varian:</strong> P. 1</li>
-                            <li><strong>Kasus pertama kali ditemukan:</strong> Brazil, November 2020</li>
-                            <li><strong>Tingkat penularan virus:</strong> belum diketahui</li>
-                            <li><strong>Tingkat keparahan infeksi:</strong> cenderung kebal terhadap pengobatan COVID-19
-                            </li>
+                            <li><strong>Variant Code:</strong> P. 1</li>
+                            <li><strong>First discovered case:</strong> Brazil, November 2020</li>
+                            <li><strong>Virus infection rate:</strong> Unknown</li>
+                            <li><strong>Infection severity:</strong> tend to be immune to COVID-19 treatment</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="tab w-full overflow-hidden border-t">
                     <input class="absolute opacity-0" id="tab-multi-four" type="checkbox" name="tabs">
-                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-four">Varian Delta</label>
+                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-four">Delta Variant</label>
                     <div class="tab-content overflow-hidden bg-gray-100 leading-normal pl-8">
                         <ul class="list-disc py-4">
-                            <li><strong>Kode varian:</strong> B.1.617.2</li>
-                            <li><strong>Kasus pertama kali ditemukan:</strong> India, Oktober 2020</li>
-                            <li><strong>Tingkat penularan virus:</strong> 30–100% lebih mudah menular dari varian Alfa
-                            </li>
-                            <li><strong>Tingkat keparahan infeksi:</strong> potensi peningkatan risiko dibutuhkannya
-                                rawat
-                                inap hampir dua kali lipat dari varian Alfa</li>
+                            <li><strong>Variant Code:</strong> B.1.617.2</li>
+                            <li><strong>First discovered case:</strong> India, October 2020</li>
+                            <li><strong>Virus infection rate:</strong> 30–100% more easily transmitted than Alpha
+                                variant</li>
+                            <li><strong>Infection severity:</strong> almost twice the potential of hospitalization from
+                                Alpha variant</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="tab w-full overflow-hidden border-t">
                     <input class="absolute opacity-0" id="tab-multi-five" type="checkbox" name="tabs">
-                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-five">Varian Lambda</label>
+                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-five">Lambda Variant</label>
                     <div class="tab-content overflow-hidden bg-gray-100 leading-normal pl-8">
                         <ul class="list-disc py-4">
-                            <li><strong>Kode varian:</strong> C. 37</li>
-                            <li><strong>Kasus pertama kali ditemukan:</strong> Peru, Desember 2020</li>
-                            <li><strong>Tingkat penularan virus:</strong> belum diketahui</li>
-                            <li><strong>Tingkat keparahan infeksi:</strong> belum diketahui</li>
+                            <li><strong>Variant Code:</strong> C. 37</li>
+                            <li><strong>First discovered case:</strong> Peru, December 2020</li>
+                            <li><strong>Virus infection rate:</strong> Unknown</li>
+                            <li><strong>Infection severity:</strong> Unknown</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="tab w-full overflow-hidden border-t">
                     <input class="absolute opacity-0" id="tab-multi-six" type="checkbox" name="tabs">
-                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-six">Varian Kappa</label>
+                    <label class="block p-5 leading-normal cursor-pointer" for="tab-multi-six">Kappa Variant</label>
                     <div class="tab-content overflow-hidden bg-gray-100 leading-normal pl-8">
                         <ul class="list-disc py-4">
-                            <li><strong>Kode varian:</strong> 1.617.2</li>
-                            <li><strong>Kasus pertama kali ditemukan:</strong> India, Oktober 2020</li>
-                            <li><strong>Tingkat penularan virus:</strong> belum diketahui</li>
-                            <li><strong>Tingkat keparahan infeksi:</strong> belum diketahui</li>
+                            <li><strong>Variant Code:</strong> 1.617.2</li>
+                            <li><strong>First discovered case:</strong> India, October 2020</li>
+                            <li><strong>Virus infection rate:</strong> Unknown</li>
+                            <li><strong>Infection severity:</strong> Unknown</li>
                         </ul>
                     </div>
                 </div>
@@ -244,30 +240,27 @@
 
     <section class="flex justify-center items-center flex-col md:flex-row px-8 md:px-28 py-16">
         <div class="md:w-4/6 flex flex-col justify-center text-justify py-5">
-            <h1 class="text-2xl md:text-4xl font-semibold mb-5 md:mb-8 text-left">Diagnosis Covid-19</h1>
+            <h1 class="text-2xl md:text-4xl font-semibold mb-5 md:mb-8 text-left">Covid-19 Diagnosis</h1>
             <div class="leading-snug">
-                <p>Untuk menentukan apakah pasien terinfeksi virus Corona, dokter akan menanyakan gejala yang dialami
-                    pasien
-                    dan apakah pasien baru saja bepergian atau tinggal di daerah yang memiliki kasus infeksi virus
-                    Corona
-                    sebelum gejala muncul. Dokter juga akan menanyakan apakah pasien ada kontak dengan orang yang
-                    menderita
-                    atau diduga menderita COVID-19.</p>
+                <p>
+                    To determine whether a patient is infected by Coronavirus, a doctor will ask the symptoms the
+                    patient
+                    is experiencing and whether the patient has just visited or been to a place with Coronavirus
+                    infection
+                    case before symptoms arose.
+                </p>
                 <br>
-                <p>Guna memastikan diagnosis COVID-19, dokter akan melakukan beberapa pemeriksaan berikut:</p>
+                <p>In order to confirm the diagnosis of COVID-19, a doctor will do these tests:</p>
                 <br>
                 <ul class="list-disc pl-5">
-                    <li class="p-2">Rapid test untuk mendeteksi antibodi (IgM dan IgG) yang
-                        diproduksi
-                        oleh tubuh untuk melawan virus Corona. Namun, rapid test antigen sekarang dianggap lebih akurat
-                        dibandingkan rapid antibodi. Meski demikian, pemeriksaan rapid test atau swab antigen tidak
-                        dianjurkan untuk dilakukan mandiri di rumah dan harus oleh petugas medis</li>
-                    <li class="p-2">Swab test atau tes PCR (polymerase chain reaction) untuk
-                        mendeteksi
-                        virus Corona di dalam dahak.</li>
-                    <li class="p-2">CT scan atau Rontgen dada untuk mendeteksi infiltrat atau cairan
-                        di
-                        paru-paru.</li>
+                    <li class="p-2">
+                        Rapid test to detect antibodies (IgM and IgG) produced by the body to fight Coronavirus. However,
+                        antigen rapid tests are now considered more accurate than antibodies rapid test.
+                        Even then, rapid test or antigen swab is not recommended to be done independently at home and
+                        instead should be done by medical personnel.
+                    </li>
+                    <li class="p-2">Swab test or PCR test (polymerase chain reaction) to detect Coronavirus in phlegm.</li>
+                    <li class="p-2">CT scan or Rontgen to detect infiltrate or liquid in the lung.</li>
                 </ul>
             </div>
         </div>
@@ -275,14 +268,12 @@
 
     <section class="w-full bg-blue-100 py-16">
         <h1 class="text-center text-2xl md:text-4xl mb-4 font-semibold">
-            Berita Terkini
+            Latest News
         </h1>
-        <div class="flex mx-auto w-5/6 flex-wrap items-center justify-center"
-            id="section-news">
+        <div class="flex mx-auto w-5/6 flex-wrap items-center justify-center" id="section-news">
 
         </div>
-        <div class="flex mx-auto w-5/6 flex-wrap items-center justify-center"
-            id="news-skeleton">
+        <div class="flex mx-auto w-5/6 flex-wrap items-center justify-center" id="news-skeleton">
             <div class="flex flex-col bg-white p-3 max-w-xs m-2 h-72 w-full">
                 <div class="animate-pulse">
                     <div class="mb-2 w-full h-40 bg-gray-300 rounded"></div>
@@ -384,7 +375,7 @@
     })
 
     let dateElement = document.querySelector('#date');
-    let month = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'Desember'];
+    let month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'December'];
 
     let today = new Date();
     let dd = today.getDate();
