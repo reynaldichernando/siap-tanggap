@@ -63,14 +63,14 @@
         @endif
         <div class="absolute inset-0 bg-gray-500 flex flex-col justify-center items-center text-white opacity-0 transition-opacity ease-in-out"
             id="profilepic-content">
-            <span class="text-md md:text-2xl font-semibold w-1/2 text-center">Ubah Foto Profil</span>
+            <span class="text-md md:text-2xl font-semibold w-4/5 text-center">Change Profile Picture</span>
         </div>
 
         <input type="file" class="hidden" id="input-image" name="profile-picture">
     </div>
 
     <div id="div-form" class="">
-        <label class="text-gray-600 font-light">Nama</label>
+        <label class="text-gray-600 font-light">Name</label>
         <input type='text' value="{{ Auth::user()->name }}" name="name"
             class="w-full mt-2 mb-6 px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:border-green-500"
             id="input-name" />
