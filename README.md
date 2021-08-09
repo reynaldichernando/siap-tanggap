@@ -1,31 +1,31 @@
 # siaptanggap
 
-Pusat informasi Covid-19 di Indonesia. Dapatkan informasi terbaru terkait Covid-19 serta pelaksanaan vaksinasi di Indonesia.
+Information Center for Covid-19 in Indonesia. Get latest news related to Covid-19 and vaccinations in Indonesia.
 
-## Teknologi
+## Technology
 - Laravel 8
 - TailwindCSS
 - MySQL
 - PHP
 
-## Penggunaan
-Instalasi
-1. Unzip folder projek dan jalankan program XAMPP
-2. Buat database di phpmyadmin dengan nama database "siap-tanggap" (tanpa kutip)
-3. Import database dari file siap-tanggap.sql
-4. Masukkan folder siap-tanggap ke directory htdocs XAMPP seperti pada gambar
+## Usage
+Installation
+1. Unzip the project folder and run the XAMPP program.
+2. Create database in phpmyadmin with the name "siap-tanggap" (without quotes)
+3. Import database from siap-tanggal.sql file
+4. Insert siap-tanggap folder into XAMPP htdocs directory, as shown in the picture
 ![](docs/directory.png)
-5. Buka browser pada URL http://localhost/siap-tanggap/ seperti pada gambar
+5. Open browser with the URL http://localhost/siap-tanggap/, as shown in the picture
 ![](docs/localhost.png)
 
-Credentials user untuk login dapat menggunakan:
+User credentials for login:
 - reynaldi@user.com
 - stephen@user.com
 - naomi@user.com
 - thomas@user.com
 - felix@user.com
 
-dengan password 12345678
+with the password 12345678
 
 ## Screenshots
 ![](docs/landing.png)
@@ -38,6 +38,6 @@ dengan password 12345678
 ![](docs/forum.png)
 ![](docs/forum-detail.png)
 
-## Kelompok BINUS40TahunBerkarya
+## Team BINUS40TahunBerkarya
 - Reynaldi Chernando
 - Stephen Leonardo
