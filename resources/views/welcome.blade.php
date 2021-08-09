@@ -48,7 +48,7 @@
                 <h2 class="text-3xl text-left mb-6">Monitor Cases and Latest Covid-19 News</h2>
                 <p class="text-left text-lg leading-relaxed">
                     Understand the virus and ways to deal with it as well as read latest trusted news on our website.
-                    Learn the different variants of Covid-19 along with the diagnosis and the symtomps.
+                    Learn the different variants of Covid-19 along with the diagnosis and the symptoms.
                 </p>
             </div>
         </div>
