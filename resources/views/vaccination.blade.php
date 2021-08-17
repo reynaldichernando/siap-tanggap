@@ -3,7 +3,7 @@
 @section('content')
 <main class="flex flex-col items-center">
     <section class="flex justify-center bg-purple-100 w-full">
-        <h1 class="text-4xl mt-16 mb-8">Vaccination Location</h1>
+        <h1 class="text-4xl mt-16 mb-8 text-center">Vaccination Location</h1>
     </section>
     <section class="flex flex-col items-center justify-center w-full pt-20 pb-40 px-10 bg-purple-100">
         <h3 class="text-xl mb-10 text-center">Find Health Facilities Providing Covid-19 Vaccinations</h3>
